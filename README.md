@@ -1,2 +1,0 @@
-# UMNGrove
-UMNGrove Project Website 
