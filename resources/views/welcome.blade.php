@@ -14,7 +14,7 @@
     <!-- Main Container -->
     <div class="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50">
         <!-- Enhanced Mobile-Friendly Navigation -->
-        <nav class="sticky top-0 z-50 border-b border-gray-200 shadow-sm bg-white/95 backdrop-blur-lg">
+        <nav class="sticky top-0 z-50 py-4 border-b border-gray-200 shadow-sm bg-white/95 backdrop-blur-lg">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-16 gap-6 sm:h-20">
                     <!-- Logo Section with increased spacing -->
@@ -36,11 +36,10 @@
                     <div class="hidden w-full md:flex md:items-center md:justify-between lg:justify-center">
                         <!-- Center Links -->
                         <div class="flex items-center ml-8 mr-8 space-x-8 lg:absolute lg:left-1/2 lg:-translate-x-1/2">
-                            <a href="{{ route('login') }}" class="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600">Products</a>
-                            <a href="{{ route('login') }}" class="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600">About</a>
-                            <a href="{{ route('login') }}" class="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600">Contact</a>
+                            <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Products</a>
+                            <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">About</a>
+                            <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Contact</a>
                         </div>
-
 
                         <!-- Auth Links -->
                         @if (Route::has('login'))
