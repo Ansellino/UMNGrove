@@ -25,7 +25,7 @@
                     </div>
 
                     <!-- Mobile Menu Button -->
-                    <button type="button" class="inline-flex items-center justify-center p-2 text-gray-700 rounded-md md:hidden hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" id="mobile-menu-button">
+                    <button type="button" class="inline-flex items-center justify-center p-2 text-gray-700 rounded-md lg:hidden hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" id="mobile-menu-button">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -33,14 +33,22 @@
                     </button>
 
                     <!-- Desktop Navigation -->
-                    <div class="hidden w-full md:flex md:items-center md:justify-between lg:justify-center">
+                    <div class="hidden w-full lg:flex lg:items-center lg:justify-center">
                         <!-- Center Links -->
-                        <div class="flex items-center ml-8 mr-8 space-x-8 lg:absolute lg:left-1/2 lg:-translate-x-1/2">
-                            <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Products</a>
+                        <div class="flex items-center gap-3 ml-3 mr-3 space-x-3 lg:absolute lg:left-1/2 lg:-translate-x-1/2">
+                            <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Home</a>
                             <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">About</a>
                             <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Contact</a>
+                            <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Product & Tours</a>
+                            <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">News& Blog</a>
+                            <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">CSR Programs</a>
+                            <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Research & Dedication</a>
                         </div>
 
+                        <!-- Left spacing div -->
+                        <div class="invisible gap-8 mx-4 text-2xl font-bold"> | </div>
+                        <!-- Right spacing div -->
+                        <div class="invisible gap-8 mx-4 text-2xl font-bold"> | </div>
                         <!-- Auth Links -->
                         @if (Route::has('login'))
                             <div class="flex items-center space-x-4">
@@ -63,12 +71,15 @@
             </div>
 
             <!-- Mobile Navigation Menu -->
-            <div class="hidden md:hidden" id="mobile-menu">
+            <div class="hidden lg:hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
-                    <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Products</a>
+                    <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Home</a>
                     <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">About</a>
                     <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Contact</a>
-
+                    <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Product & Tours</a>
+                    <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">News& Blog</a>
+                    <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">CSR Programs</a>
+                    <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Research & Dedication</a>
                     @if (Route::has('login'))
                         <div class="pt-4 pb-3 border-t border-gray-200">
                             @auth
@@ -270,7 +281,7 @@
 
         // Handle window resize
         window.addEventListener('resize', () => {
-            if (window.innerWidth >= 768) { // md breakpoint
+            if (window.innerWidth >= 1024) { // md breakpoint
                 mobileMenu.classList.add('hidden');
             }
         });
