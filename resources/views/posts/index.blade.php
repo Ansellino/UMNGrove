@@ -1,6 +1,6 @@
 <x-app-layout>
     <!-- Enhanced Background with Pattern -->
-    <div class="relative w-full min-h-screen bg-opacity-50 backdrop-blur-sm" style="background-color: rgba(252, 252, 228, 0.5)">
+    <div class="relative w-full min-h-screen bg-transparent rounded-lg backdrop-blur-sm">
         <!-- Main Content -->
         <div class="relative z-10 py-8 sm:py-12">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -118,7 +118,7 @@
                 <!-- Grid Header -->
                 <div class="flex flex-col gap-2 mb-6 sm:flex-row sm:items-center sm:justify-between">
                     <h2 class="text-2xl font-bold text-gray-900">Available Products</h2>
-                    <div class="px-3 py-1 text-sm text-gray-500 bg-white border rounded-full shadow-sm">
+                    <div class="px-3 py-1 text-sm text-gray-500 bg-white border-2 rounded-full shadow-sm">
                         Showing {{ $posts->firstItem() ?? 0 }} to {{ $posts->lastItem() ?? 0 }} of {{ $posts->total() ?? 0 }} products
                     </div>
                 </div>
