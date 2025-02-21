@@ -5,6 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\PostResource\Pages;
 use App\Models\Post;
 use App\Models\User; // Import the User model
+use App\Providers\ImageService;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\MarkdownEditor;
@@ -16,6 +17,7 @@ use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table; // Import the Table class
 use Illuminate\Support\Str;
+use Intervention\Image\Facades\Image;
 
 class PostResource extends Resource
 {
@@ -44,8 +46,8 @@ class PostResource extends Resource
                 FileUpload::make('image')
                     ->label('Images')
                     ->directory('Images')
-                    ->nullable(),
-            ]);
+                    ->nullable()
+                ]);
     }
 
     public static function table(Table $table): Table // Use Table $table type hint

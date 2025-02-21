@@ -27,11 +27,11 @@
                         <div class="relative flex items-center justify-center p-6 bg-gray-50">
                             @if ($post->image)
                                 <div class="relative max-w-md mx-auto group">
-                                    <div class="overflow-hidden bg-white aspect-w-4 aspect-h-3 rounded-xl">
+                                    <div class="overflow-hidden bg-white rounded-xl h-[200px]">
                                         <img
                                             src="{{ asset('storage/'. $post->image) }}"
                                             alt="{{ $post->title }}"
-                                            class="object-contain w-full h-full transition-all duration-500 transform group-hover:scale-105"
+                                            class="object-contain w-full h-[200px] transition-all duration-500 transform group-hover:scale-105"
                                         >
                                     </div>
                                 </div>
