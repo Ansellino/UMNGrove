@@ -20,23 +20,22 @@
                     <!-- Logo Section with increased spacing -->
                     <div class="flex items-center space-x-12">
                         <a href="/" class="flex items-center">
-                            <x-application-logo class="text-gray-500 fill-current w-max h-max sm:h-10" />
+                            <x-application-logo class="text-gray-500 fill-current w-max h-max sm:h-12" />
                         </a>
                     </div>
 
                     <!-- Mobile Menu Button -->
                     <button type="button" class="inline-flex items-center justify-center p-2 text-gray-700 rounded-md lg:hidden hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" id="mobile-menu-button">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <span class="sr-only">OPEN MAIN MENU</span>
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
 
                     <!-- Desktop Navigation -->
-                    <div class="hidden w-full lg:flex lg:items-center lg:justify-center">
+                    <div class="hidden w-full mx-4 lg:flex lg:items-center lg:justify-center">
                         <!-- Center Links -->
-                        <div class="flex items-center gap-3 ml-3 mr-3 space-x-3 lg:absolute lg:left-1/2 lg:-translate-x-1/2">
-                            <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Home</a>
+                        <div class="flex items-center gap-4 ml-4 mr-3 space-x-6 lg:absolute lg:left-1/2 lg:-translate-x-1/2">
                             <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">About</a>
                             <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Contact</a>
                             <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Product & Tours</a>
@@ -45,13 +44,9 @@
                             <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Research & Dedication</a>
                         </div>
 
-                        <!-- Left spacing div -->
-                        <div class="invisible gap-8 mx-4 text-2xl font-bold"> | </div>
-                        <!-- Right spacing div -->
-                        <div class="invisible gap-8 mx-4 text-2xl font-bold"> | </div>
                         <!-- Auth Links -->
                         @if (Route::has('login'))
-                            <div class="flex items-center space-x-4">
+                            <div class="flex items-center mx-4 space-x-4">
                                 @auth
                                     <a href="{{ url('/dashboard') }}" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition-all duration-200 bg-blue-600 rounded-lg shadow-sm hover:bg-blue-700 hover:scale-105">
                                         Dashboard
@@ -73,7 +68,6 @@
             <!-- Mobile Navigation Menu -->
             <div class="hidden lg:hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
-                    <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Home</a>
                     <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">About</a>
                     <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Contact</a>
                     <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Product & Tours</a>
@@ -102,7 +96,7 @@
 
             <div class="relative px-4 py-24 sm:px-6 sm:py-32 lg:py-40 lg:px-8">
                 <div class="max-w-3xl mx-auto text-center">
-                    <h1 class="text-4xl font-bold text-white sm:text-5xl md:text-6xl">
+                    <h1 class="text-5xl font-bold text-white sm:text-5xl md:text-6xl">
                         Welcome To Patikang
                     </h1>
                     <p class="mt-4 text-lg text-white sm:text-xl">
@@ -353,25 +347,57 @@
               <div class="grid grid-cols-1 gap-6 mt-10 lg:grid-cols-2 lg:gap-8">
                 <div class="flex flex-col items-center justify-center p-8 transition-all duration-300 rounded-lg shadow-lg bg-white/90 hover:shadow-xl hover:transform hover:scale-105">
                   <h3 class="text-3xl font-bold text-center text-gray-900">About Us</h3>
-                  <div class="flex flex-col items-center justify-center mt-6 space-y-4">
-                    <p class="text-xl text-center text-gray-800">
-                      Patikang Village, Citereup Village<br>
-                      Panimbang, Pandeglang<br>
-                      Banten, Indonesia
-                    </p>
-                    <div class="inline-flex items-center justify-center px-4 py-2 space-x-2 text-xl font-medium text-blue-600">
-                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                      </svg>
-                      <span>Deden: +62 817-849-463</span>
+                  <div class="space-y-6">
+                    <!-- Address Card -->
+                    <div class="p-4 transition-all duration-300 rounded-lg">
+                        <div class="flex items-start space-x-4">
+                            <div class="p-2 bg-blue-100 rounded-lg">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Our Location</h4>
+                                <p class="mt-1 text-gray-600">
+                                    Patikang Village, Citereup Village<br>
+                                    Panimbang, Pandeglang<br>
+                                    Banten, Indonesia
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="inline-flex items-center justify-center px-4 py-2 space-x-2 text-xl font-medium text-green-600">
-                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                      </svg>
-                      <span>Mon-Fri, 8:00-22:00</span>
+
+                    <!-- Phone Card -->
+                    <div class="p-4 transition-all duration-300 rounded-lg">
+                        <div class="flex items-start space-x-4">
+                            <div class="p-2 bg-green-100 rounded-lg">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Contact Person</h4>
+                                <p class="mt-1 text-gray-600">Deden: +62 817-849-463</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
+                    <!-- Hours Card -->
+                    <div class="p-4 transition-all duration-300 rounded-lg">
+                        <div class="flex items-start space-x-4">
+                            <div class="p-2 bg-purple-100 rounded-lg">
+                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Operating Hours</h4>
+                                <p class="mt-1 text-gray-600">Monday - Friday, 8:00 - 22:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
 
                 <div class="p-6 bg-white rounded-lg shadow-md">

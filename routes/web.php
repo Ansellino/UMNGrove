@@ -15,15 +15,15 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-    Route::middleware(['auth'])->group(function () {
-        // Redirect dashboard to posts index
-        Route::get('/dashboard', function () {
-            return redirect()->route('posts.index');
-        })->name('dashboard');
+Route::middleware(['auth'])->group(function () {
+    // Redirect dashboard to posts index
+    Route::get('/dashboard', function () {
+        return redirect()->route('posts.index');
+    })->name('dashboard');
 
-        // Posts routes
-        Route::resource('posts', PostController::class);
-    });
+    // Posts routes
+    Route::resource('posts', PostController::class);
+});
 
 Route::middleware(['auth'])->group(function () {
     Route::post('/posts/{post}/favorite', [PostController::class, 'toggleFavorite'])

@@ -43,7 +43,7 @@ class PostController extends Controller
                     default => $query->latest() // Default sorting
                 };
             });
-            
+
             $posts = Post::withCount('favoritedBy')
                 ->latest()
                 ->paginate(12);
