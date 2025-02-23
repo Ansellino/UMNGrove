@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\GuestContactController;
 use App\Http\Controllers\PostController;
@@ -34,5 +35,6 @@ Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::get('/aboutus', [AboutController::class, 'index'])->name('aboutus');
 
 require __DIR__.'/auth.php';

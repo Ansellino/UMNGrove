@@ -34,7 +34,14 @@ export default {
             backdropBlur: {
                 xs: "2px",
             },
+            zIndex: {
+                50: "50",
+            },
         },
     },
-    plugins: [forms, require("@tailwindcss/aspect-ratio")],
+    plugins: [
+        forms,
+        require("@tailwindcss/aspect-ratio"),
+        require("@tailwindcss/forms"),
+    ],
 };
