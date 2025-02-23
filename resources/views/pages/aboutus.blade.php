@@ -72,6 +72,20 @@
                             </div>
                         </div>
 
+                        <div class="relative p-8 py-8 mt-12 overflow-hidden rounded-xl">
+                            <div class="absolute inset-0 z-0">
+                                <img src="{{ asset('ABOUT/Header.png') }}" alt="Background"
+                                     class="object-cover w-full h-full filter blur-[8px] opacity-20">
+                            </div>
+                            <div class="relative z-10">
+                                <h2 class="mb-6 text-3xl font-bold text-center text-gray-900">Our Journey</h2>
+                                <div class="max-w-3xl mx-auto prose text-center lg:prose-xl">
+                                    <p class="text-gray-700">
+                                        What began as a swampy area where local people lived, Lembur Mangrove has now evolved into a tourism village that blends conservation with economic empowerment. Since 2017, thanks to the initiative of Pokdarwis Putri Gundul, we have transformed the potential of our natural resources into an educational and entertaining tourism experience.                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="py-8 mt-8 mb-4">
                             <h2 class="mb-12 text-4xl font-bold text-center text-gray-900">What We Offer</h2>
                             <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
