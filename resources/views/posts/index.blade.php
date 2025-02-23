@@ -134,10 +134,10 @@
                                 <a href="{{ route('posts.show', $post) }}"
                                 class="relative block overflow-hidden aspect-w-1 aspect-h-1 group">
                                     @if($post->image)
-                                        <img src="{{ asset('storage/'. $post->image) }}"
-                                            alt="{{ $post->title }}"
-                                            class="object-cover w-full h-[200px] transition-transform duration-500 transform group-hover:scale-110"
-                                            loading="lazy">
+                                    <img src="{{ asset('storage/'. $post->image) }}"
+                                    alt="{{ $post->title }}"
+                                    class="object-cover w-full transition-transform duration-500 transform group-hover:scale-110"
+                                    loading="lazy">
                                         <!-- Enhanced Overlay -->
                                         <div class="absolute inset-0 transition-all duration-300 opacity-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent group-hover:opacity-100">
                                             <div class="absolute inset-x-0 bottom-0 p-4">
