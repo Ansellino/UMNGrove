@@ -31,8 +31,8 @@
                                     <div class="relative overflow-hidden rounded-xl group">
                                         <img src="{{ asset('CSR/Research.jpg') }}" 
                                              alt="Research & Dedication" 
-                                             class="w-full h-[250px] sm:h-[300px] lg:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110">
-                                        <div class="absolute inset-0 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-black/60 to-transparent group-hover:opacity-100"></div>
+                                             class="w-full h-[150px] sm:h-[200px] lg:h-[250px] object-cover transition-transform duration-500 group-hover:scale-110">
+                                        <div class="absolute inset-0 transition-opacity duration-300 opacity-20 bg-gradient-to-t from-black/60 to-transparent group-hover:opacity-100"></div>
                                     </div>
                                 </div>
 
