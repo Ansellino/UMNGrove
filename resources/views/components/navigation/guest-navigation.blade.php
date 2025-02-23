@@ -25,7 +25,7 @@
                     <a href="{{ route('posts.index') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Product & Tours</a>
                     <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">News& Blog</a>
                     <a href="{{ route('csrprogram') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">CSR Programs</a>
-                    <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Research & Dedication</a>
+                    <a href="{{ route('researchdedication') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Research & Dedication</a>
                 </div>
 
                 <!-- Auth Links -->
@@ -57,7 +57,7 @@
             <a href="{{ route('posts.index') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Product & Tours</a>
             <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">News& Blog</a>
             <a href="{{ route('csrprogram') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">CSR Programs</a>
-            <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Research & Dedication</a>
+            <a href="{{ route('researchdedication') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Research & Dedication</a>
             @if (Route::has('login'))
                 <div class="pt-4 pb-3 border-t border-gray-200">
                     @auth

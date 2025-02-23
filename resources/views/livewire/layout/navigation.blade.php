@@ -39,7 +39,7 @@ new class extends Component {
                     <x-nav-link :href="route('csrprogram')" :active="request()->routeIs('csrprogram')" wire:navigate>
                         <span class="text-sm font-medium text-black">{{ __('CSR Programs') }}</span>
                     </x-nav-link>
-                    <x-nav-link href="#" :active="request()->routeIs('research')" wire:navigate>
+                    <x-nav-link :href="route('researchdedication')" :active="request()->routeIs('researchdedication')" wire:navigate>
                         <span class="text-sm font-medium text-black">{{ __('Research & Dedication') }}</span>
                     </x-nav-link>
                 </div>
@@ -123,7 +123,7 @@ new class extends Component {
             <x-responsive-nav-link :href="route('csrprogram')" :active="request()->routeIs('csrprogram')" wire:navigate>
                 <span class="text-sm font-medium text-black">{{ __('CSR Programs') }}</span>
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="#" :active="request()->routeIs('research')" wire:navigate>
+            <x-responsive-nav-link :href="route('researchdedication')" :active="request()->routeIs('researchdedication')" wire:navigate>
                 <span class="text-sm font-medium text-black">{{ __('Research & Dedication') }}</span>
             </x-responsive-nav-link>
         </div>
