@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\GuestContactController;
+use App\Http\Controllers\CsrController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -36,5 +36,7 @@ Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show')
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/aboutus', [AboutController::class, 'index'])->name('aboutus');
+Route::get('/csrprogram', [CsrController::class, 'index'])->name('csrprogram');
+
 
 require __DIR__.'/auth.php';

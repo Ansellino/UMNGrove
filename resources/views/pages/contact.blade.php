@@ -6,7 +6,7 @@
         <div class="relative z-10 flex items-center justify-center min-h-screen px-4 py-12">
             <div class="w-full max-w-7xl">
                 <div class="overflow-hidden transition-all duration-300 transform bg-white shadow-2xl rounded-3xl hover:shadow-3xl">
-                    <div class="relative px-6 py-10 overflow-hidden bg-center bg-no-repeat bg-cover sm:px-12 sm:py-16" 
+                    <div class="relative px-6 py-10 overflow-hidden bg-center bg-no-repeat bg-cover sm:px-12 sm:py-16"
                          style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(17, 24, 39, 0.8)), url('{{ asset('images1/banner.png') }}');">
                         <div class="relative">
                             <h1 class="relative max-w-3xl mx-auto text-3xl font-bold text-center text-white sm:text-4xl lg:text-5xl">
@@ -21,7 +21,7 @@
                                 <h2 class="text-2xl font-bold text-gray-800">Our Google Maps Location</h2>
                                 <p class="text-gray-600">Find us easily using Google Maps</p>
                             </div>
-                            
+
                             <div class="relative w-full overflow-hidden bg-gray-200 shadow-lg rounded-xl h-96">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.864696014467!2d105.5117217748805!3d-6.162489993872215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e418b3293027b5b%3A0x6a0c0e7041f92e21!2sKp%20Patikang%2C%20Citereup%2C%20Panimbang%2C%20Pandeglang%2C%20Banten!5e0!3m2!1sid!2sid!4v1707267152010!5m2!1sid!2sid"
@@ -33,7 +33,7 @@
                                     referrerpolicy="no-referrer-when-downgrade">
                                 </iframe>
                             </div>
-                    
+
                             <!-- Contact Information -->
                             <div class="grid gap-8 md:grid-cols-2">
                                 <!-- Location Info -->
@@ -55,7 +55,7 @@
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <!-- Contact Info -->
                                 <div class="p-6 space-y-4 transition-colors duration-300 border-4 border-gray-200 bg-gray-50 rounded-xl hover:border-green-500">
                                     <div class="flex items-start space-x-4">
@@ -80,7 +80,7 @@
                                     </div>
                                 </div>
                             </div>
-                    
+
                             <!-- Chat Button -->
                             <div class="flex justify-center mt-6">
                                 <a href="#" class="inline-flex items-center px-6 py-3 space-x-2 text-base font-medium text-black transition-all duration-200 bg-green-600 border-4 border-green-500 rounded-lg shadow-lg hover:bg-green-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 hover:border-green-600">
