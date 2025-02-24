@@ -2,9 +2,9 @@
     <div class="relative min-h-screen py-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 sm:py-12">
         <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
             <!-- Interactive Breadcrumb with Animation -->
-            <nav class="flex items-center p-4 mb-8 space-x-2 overflow-x-auto rounded-xl scrollbar-hide" 
+            <nav class="flex items-center p-4 mb-8 space-x-2 overflow-x-auto rounded-xl scrollbar-hide"
                  aria-label="Breadcrumb">
-                <a href="{{ route('dashboard') }}" 
+                <a href="{{ route('dashboard') }}"
                    class="flex items-center px-3 py-2 space-x-2 text-gray-600 transition-all duration-300 rounded-lg hover:bg-blue-50 hover:text-blue-600 group">
                     <svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
@@ -12,7 +12,7 @@
                     <span class="hidden sm:block">Home</span>
                 </a>
                 <span class="text-gray-400">/</span>
-                <a href="{{ route('news.index') }}" 
+                <a href="{{ route('news.index') }}"
                    class="px-3 py-2 text-gray-600 transition-all duration-300 rounded-lg hover:bg-blue-50 hover:text-blue-600">
                     News & Updates
                 </a>
@@ -27,19 +27,27 @@
                      x-data="{ showShareMenu: false }">
                 <!-- Dynamic Header Section -->
                 <div class="relative p-6 overflow-hidden border-b-2 border-gray-100 sm:p-8 lg:p-10">
+                    <!-- Background Image with Blur -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="{{ asset('images1/banner.png') }}"
+                             alt="Background"
+                             class="object-cover w-full h-full"
+                             style="filter: blur(8px); opacity: 0.15;">
+                    </div>
+
                     <div class="relative z-10">
                         <h1 class="text-3xl font-bold tracking-tight text-black bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900 bg-clip-text sm:text-4xl lg:text-5xl animate-fade-in">
                             {{ $newsItem->title }}
                         </h1>
-                        
+
                         <!-- Interactive Metadata -->
                         <div class="flex flex-wrap items-center gap-3 mt-6 sm:gap-4">
                             <div class="flex items-center px-4 py-2 text-sm transition-all duration-300 rounded-full bg-blue-50 hover:bg-blue-100 hover:scale-105">
                                 <svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                           d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                                 </svg>
-                                <time datetime="{{ $newsItem->created_at->format('Y-m-d') }}" 
+                                <time datetime="{{ $newsItem->created_at->format('Y-m-d') }}"
                                       class="text-blue-700">
                                     {{ $newsItem->created_at->format('F j, Y') }}
                                 </time>
@@ -47,7 +55,7 @@
                             @if($newsItem->author)
                                 <div class="flex items-center px-4 py-2 text-sm transition-all duration-300 rounded-full bg-blue-50 hover:bg-blue-100 hover:scale-105">
                                     <svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                               d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                                     </svg>
                                     <span class="text-blue-700">{{ $newsItem->author->name }}</span>
@@ -59,13 +67,14 @@
 
                 <!-- Image Section with Enhanced Border -->
                 @if($newsItem->image)
-                    <div class="relative mx-auto overflow-hidden border-b-2 border-gray-100 group">
-                        <div class="relative w-full overflow-hidden h-[100px] sm:h-[150px] lg:h-[200px]">
+                    <div class="mx-auto overflow-hidden border-b-2 border-gray-100 group">
+                        <div class="w-full overflow-hidden" style="max-height: 30rem;">
                             <img src="{{ asset('storage/' . $newsItem->image) }}"
                                  alt="{{ $newsItem->title }}"
-                                 class="object-cover w-full h-full transition-all duration-700"
+                                 class="object-contain w-full h-full transition-all duration-700"
+                                 style="max-height: 30rem; width: auto; margin: 0 auto;"
                             >
-                            <div class="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent group-hover:opacity-100"></div>
+                            <div class="transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent group-hover:opacity-100"></div>
                         </div>
                     </div>
                 @endif
@@ -105,13 +114,13 @@
                         <!-- Back Button with Animation -->
                         <a href="{{ route('news.index') }}"
                            class="inline-flex items-center px-6 py-3 text-base font-medium text-white transition-all duration-300 bg-blue-600 rounded-lg shadow-md group hover:bg-blue-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                            <svg class="w-5 h-5 mr-2 transition-transform duration-300 transform group-hover:-translate-x-1" 
-                                 fill="none" 
-                                 stroke="currentColor" 
+                            <svg class="w-5 h-5 mr-2 transition-transform duration-300 transform group-hover:-translate-x-1"
+                                 fill="none"
+                                 stroke="currentColor"
                                  viewBox="0 0 24 24">
-                                <path stroke-linecap="round" 
-                                      stroke-linejoin="round" 
-                                      stroke-width="2" 
+                                <path stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
                                       d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
                             </svg>
                             <span>Back to News</span>
@@ -151,7 +160,7 @@
             object-fit: contain;
             margin: 2.5rem auto;
         }
-        
+
         .prose a {
             @apply text-blue-600 transition-colors duration-300 hover:text-blue-800 no-underline hover:underline;
         }
