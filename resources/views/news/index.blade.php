@@ -125,9 +125,10 @@
                                             </a>
                                         </h2>
 
-                                        <p class="mb-4 text-gray-600 line-clamp-3">
-                                            {{ Str::limit($article->content, 200) }}
-                                        </p>
+                                        <!-- With this -->
+                                        <div class="mb-4 prose-sm prose text-gray-600 line-clamp-3">
+                                            {!! Str::limit(strip_tags($article->content), 200) !!}
+                                        </div>
 
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center text-sm text-gray-500">

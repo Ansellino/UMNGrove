@@ -16,18 +16,21 @@ class NewsController extends Controller
             // Search functionality
             if ($request->filled('search')) {
                 $searchTerm = strip_tags($request->search);
-                $query->where('title', 'like', '%' . $searchTerm . '%');
+                $query->where(function($q) use ($searchTerm) {
+                    $q->where('title', 'like', '%' . $searchTerm . '%')
+                      ->orWhere('content', 'like', '%' . $searchTerm . '%');
+                });
             }
 
             // Sorting
             $query->when($request->filled('sort'), function($query) use ($request) {
                 return match($request->sort) {
-                    'latest' => $query->latest(),
-                    'oldest' => $query->oldest(),
-                    default => $query->latest()
+                    'latest' => $query->latest('created_at'),
+                    'oldest' => $query->oldest('created_at'),
+                    default => $query->latest('created_at')
                 };
             }, function($query) {
-                return $query->latest();
+                return $query->latest('created_at');
             });
 
             // Paginate results with appended query parameters

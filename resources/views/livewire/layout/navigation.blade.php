@@ -33,7 +33,7 @@ new class extends Component {
                     <x-nav-link :href="route('posts.index')" :active="request()->routeIs('posts.index')" wire:navigate>
                         <span class="text-sm font-medium text-black">{{ __('Products & Tours') }}</span>
                     </x-nav-link>
-                    <x-nav-link href="#" :active="request()->routeIs('news')" wire:navigate>
+                    <x-nav-link :href="route('news.index')" :active="request()->routeIs('news.index')" wire:navigate>
                         <span class="text-sm font-medium text-black">{{ __('News & Blog') }}</span>
                     </x-nav-link>
                     <x-nav-link :href="route('csrprogram')" :active="request()->routeIs('csrprogram')" wire:navigate>
@@ -117,7 +117,7 @@ new class extends Component {
             <x-responsive-nav-link :href="route('posts.index')" :active="request()->routeIs('posts.index')" wire:navigate>
                 <span class="text-sm font-medium text-black">{{ __('Products & Tours') }}</span>
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="#" :active="request()->routeIs('news')" wire:navigate>
+            <x-responsive-nav-link :href="route('news.index')" :active="request()->routeIs('news.index')" wire:navigate>
                 <span class="text-sm font-medium text-black">{{ __('News & Blog') }}</span>
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('csrprogram')" :active="request()->routeIs('csrprogram')" wire:navigate>

@@ -23,7 +23,7 @@
                     <a href="{{ route('aboutus') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">About</a>
                     <a href="{{ route('contact') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Contact</a>
                     <a href="{{ route('posts.index') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Product & Tours</a>
-                    <a href="{{ route('login') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">News& Blog</a>
+                    <a href="{{ route('news.index') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">News& Blog</a>
                     <a href="{{ route('csrprogram') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">CSR Programs</a>
                     <a href="{{ route('researchdedication') }}" class="text-base font-medium text-gray-700 transition-colors hover:text-blue-600">Research & Dedication</a>
                 </div>
@@ -55,7 +55,7 @@
             <a href="{{ route('aboutus') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">About</a>
             <a href="{{ route('contact') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Contact</a>
             <a href="{{ route('posts.index') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Product & Tours</a>
-            <a href="{{ route('login') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">News& Blog</a>
+            <a href="{{ route('news.index') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">News& Blog</a>
             <a href="{{ route('csrprogram') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">CSR Programs</a>
             <a href="{{ route('researchdedication') }}" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Research & Dedication</a>
             @if (Route::has('login'))
