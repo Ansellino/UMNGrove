@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CsrController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ResearchDedicationController;
 use Illuminate\Support\Facades\Route;
@@ -35,7 +36,8 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
-
+Route::get('/news', [NewsController::class, 'index'])->name('news.index');
+Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.show');
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/aboutus', [AboutController::class, 'index'])->name('aboutus');
