@@ -74,7 +74,7 @@
 
                         <!-- Quick Actions -->
                         <div class="grid gap-6 sm:grid-cols-2">
-                            <a href="{{ route('posts.index') }}" 
+                            <a href="{{ route('posts.index') }}"
                                class="p-6 transition duration-300 group bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-xl dark:from-blue-900/50 dark:to-blue-800/50 dark:hover:from-blue-800/50 dark:hover:to-blue-700/50">
                                 <div class="text-center">
                                     <span class="block text-2xl font-bold text-blue-700 transition-transform dark:text-blue-300 group-hover:scale-105">
@@ -86,7 +86,7 @@
                                 </div>
                             </a>
 
-                            <a href="{{ route('posts.create') }}" 
+                            <a href="{{ route('posts.create') }}"
                                class="p-6 transition duration-300 group bg-gradient-to-br from-green-50 to-green-100 hover:from-green-100 hover:to-green-200 rounded-xl dark:from-green-900/50 dark:to-green-800/50 dark:hover:from-green-800/50 dark:hover:to-green-700/50">
                                 <div class="text-center">
                                     <span class="block text-2xl font-bold text-green-700 transition-transform dark:text-green-300 group-hover:scale-105">
@@ -104,7 +104,7 @@
                             <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Latest Products</h2>
                             <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                                 @foreach(\App\Models\Post::latest()->take(3)->get() as $post)
-                                    <a href="{{ route('posts.show', $post) }}" 
+                                    <a href="{{ route('posts.show', $post) }}"
                                        class="block p-4 transition-shadow rounded-lg bg-gray-50 hover:shadow-md dark:bg-gray-700/50">
                                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ $post->title }}</h3>
                                         <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
