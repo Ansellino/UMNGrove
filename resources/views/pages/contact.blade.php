@@ -1,8 +1,5 @@
 <x-app-layout>
     <div class="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
-        <div class="absolute inset-0 z-0 hidden max-w-full max-h-screen opacity-40 bg-grid-pattern sm:block"></div>
-        <div class="absolute inset-0 z-0 max-w-full max-h-screen opacity-20 bg-grid-pattern sm:hidden"></div>
-
         <div class="relative z-10 flex items-center justify-center min-h-screen px-4 py-12">
             <div class="w-full max-w-7xl">
                 <div class="overflow-hidden transition-all duration-300 transform bg-white shadow-2xl rounded-3xl hover:shadow-3xl">

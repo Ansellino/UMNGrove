@@ -23,10 +23,10 @@
             </nav>
 
             <!-- Main Article Card with Enhanced Animations -->
-            <article class="overflow-hidden transition-all duration-500 bg-white shadow-xl rounded-2xl hover:shadow-2xl"
+            <article class="overflow-hidden transition-all duration-500 bg-white border-2 border-gray-200 shadow-xl rounded-2xl hover:shadow-2xl hover:border-blue-200"
                      x-data="{ showShareMenu: false }">
                 <!-- Dynamic Header Section -->
-                <div class="relative p-6 overflow-hidden sm:p-8 lg:p-10">
+                <div class="relative p-6 overflow-hidden border-b-2 border-gray-100 sm:p-8 lg:p-10">
                     <div class="relative z-10">
                         <h1 class="text-3xl font-bold tracking-tight text-black bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900 bg-clip-text sm:text-4xl lg:text-5xl animate-fade-in">
                             {{ $newsItem->title }}
@@ -57,30 +57,21 @@
                     </div>
                 </div>
 
-                <!-- Interactive Image Section -->
+                <!-- Image Section with Enhanced Border -->
                 @if($newsItem->image)
-                    <div class="relative mx-auto overflow-hidden group" x-data="{ isZoomed: false }">
-                        <div class="relative w-full overflow-hidden h-[300px] sm:h-[400px] lg:h-[500px] cursor-zoom-in"
-                             @click="isZoomed = !isZoomed"
-                             :class="{ 'cursor-zoom-out': isZoomed }">
+                    <div class="relative mx-auto overflow-hidden border-b-2 border-gray-100 group">
+                        <div class="relative w-full overflow-hidden h-[100px] sm:h-[150px] lg:h-[200px]">
                             <img src="{{ asset('storage/' . $newsItem->image) }}"
                                  alt="{{ $newsItem->title }}"
-                                 class="object-cover w-full h-full transition-all duration-700 transform"
-                                 :class="{ 'scale-125': isZoomed, 'scale-100': !isZoomed }"
+                                 class="object-cover w-full h-full transition-all duration-700"
                             >
                             <div class="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent group-hover:opacity-100"></div>
-                            <!-- Image Interaction Hint -->
-                            <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 bg-black/20 group-hover:opacity-100">
-                                <span class="px-4 py-2 text-sm text-white rounded-lg bg-black/50 backdrop-blur-sm">
-                                    Click to zoom
-                                </span>
-                            </div>
                         </div>
                     </div>
                 @endif
 
                 <!-- Enhanced Content Section with Typography -->
-                <div class="p-6 sm:p-8 lg:p-10">
+                <div class="p-6 border-b-2 border-gray-100 sm:p-8 lg:p-10">
                     <div class="prose prose-lg max-w-none prose-blue">
                         <div class="space-y-6 text-xl leading-relaxed text-black animate-fade-in">
                             {!! $newsItem->content !!}
@@ -88,8 +79,8 @@
                     </div>
                 </div>
 
-                <!-- Interactive Footer Section -->
-                <div class="p-6 border-t border-gray-100 sm:p-8 lg:p-10 bg-gradient-to-br from-gray-200 via-gray-100 to-gray-200">
+                <!-- Interactive Footer Section with Enhanced Border -->
+                <div class="p-6 border-t-2 border-gray-200 sm:p-8 lg:p-10 bg-gradient-to-br from-gray-50 via-white to-gray-50">
                     <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
                         <!-- Direct Share Buttons -->
                         <div class="flex space-x-4">
@@ -193,6 +184,36 @@
             .prose h2 { @apply text-xl; }
             .prose h3 { @apply text-lg; }
             .prose p, .prose li { @apply text-base; }
+        }
+
+        /* Add these styles to your existing styles */
+        .prose {
+            @apply border-2 border-gray-100 rounded-lg p-6;
+        }
+
+        .prose blockquote {
+            @apply border-l-4 border-blue-500;
+        }
+
+        .prose img {
+            @apply border-2 border-gray-100;
+        }
+
+        /* Enhanced Button Borders */
+        a.focus\:ring-2:focus {
+            @apply ring-offset-2 ring-blue-500;
+        }
+
+        /* Enhanced Border Transitions */
+        .border-2 {
+            @apply transition-colors duration-300;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 640px) {
+            .border-2 {
+                @apply border;
+            }
         }
     </style>
 </x-app-layout>

@@ -1,4 +1,5 @@
 <x-app-layout>
+   
     <div class="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
                 <div class="relative z-10 flex items-center justify-center min-h-screen px-4 py-12">
                     <div class="w-full max-w-7xl">

@@ -20,8 +20,8 @@
         <livewire:layout.navigation />
 
         <!-- Main Content -->
-        <main class="py-8 sm:py-12">
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <main>
+            <div class="mx-auto max-w-screen">
                 <!-- Page Header -->
                 @if (isset($header))
                     <header class="mb-8">
