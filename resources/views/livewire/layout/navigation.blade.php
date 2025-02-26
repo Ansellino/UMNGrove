@@ -14,18 +14,19 @@
     <nav x-data="{ open: false }"
          class="sticky top-0 z-50 transition-all duration-300 border-b border-gray-200 shadow-md bg-white/95 backdrop-blur-lg"
          :class="{ 'shadow-lg': open }">
-        <div class="px-2 mx-auto sm:px-4 lg:px-6 xl:px-8 max-w-7xl">
+        <!-- Container with responsive padding -->
+        <div class="px-2 mx-auto max-w-7xl sm:px-4 lg:px-4 xl:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20">
-                <!-- Logo Section - Adjusted -->
+                <!-- Logo Section -->
                 <div class="flex items-center flex-shrink-0">
                     <a href="/" class="flex items-center transition-transform duration-300 hover:scale-105">
                         <x-application-logo class="w-auto h-10 lg:h-12" />
                     </a>
                 </div>
 
-                <!-- Desktop Navigation - Modified for 1024px -->
-                <div class="flex-1 hidden px-4 lg:flex lg:items-center lg:justify-center xl:px-8">
-                    <div class="flex items-center justify-center space-x-4 xl:space-x-8">
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-center">
+                    <div class="flex items-center justify-center">
                         @foreach([
                             ['route' => 'aboutus', 'label' => 'About'],
                             ['route' => 'contact', 'label' => 'Contact'],
@@ -38,8 +39,8 @@
                                 :href="route($item['route'])"
                                 :active="request()->routeIs($item['route'])"
                                 wire:navigate
-                                class="relative px-2 py-2 text-sm transition-all duration-200 hover:text-blue-600 whitespace-nowrap">
-                                <span class="text-sm font-medium">{{ __($item['label']) }}</span>
+                                class="relative px-2 py-2 mx-2 text-sm font-medium transition-all duration-200 whitespace-nowrap lg:text-xs xl:text-sm hover:text-blue-600 xl:mx-4">
+                                <span>{{ __($item['label']) }}</span>
                                 @if(request()->routeIs($item['route']))
                                     <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 rounded-full"></span>
                                 @endif
@@ -48,8 +49,8 @@
                     </div>
                 </div>
 
-                <!-- Auth Section - Adjusted for 1024px -->
-                <div class="items-center hidden space-x-2 lg:flex xl:space-x-4">
+                <!-- Auth Section with responsive spacing -->
+                <div class="hidden lg:flex lg:items-center">
                     @auth
                         <x-dropdown align="right" width="48">
                             <x-slot name="trigger">
@@ -92,18 +93,18 @@
                     @else
                         <div class="flex items-center space-x-2 xl:space-x-4">
                             <a href="{{ route('login') }}"
-                               class="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600 whitespace-nowrap">
+                               class="text-sm font-medium text-gray-700 transition-colors whitespace-nowrap hover:text-blue-600">
                                 Sign in
                             </a>
                             <a href="{{ route('register') }}"
-                               class="inline-flex items-center px-3 py-2 text-sm font-medium text-white transition-all duration-200 bg-blue-600 rounded-lg shadow-sm hover:bg-blue-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 whitespace-nowrap">
+                               class="inline-flex items-center px-3 py-2 text-sm font-medium text-white transition-all duration-200 bg-blue-600 rounded-lg shadow-sm whitespace-nowrap hover:bg-blue-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                                 Register
                             </a>
                         </div>
                     @endauth
                 </div>
 
-                <!-- Mobile Menu Button - Enhanced -->
+                <!-- Mobile Menu Button -->
                 <button type="button"
                         @click="open = !open"
                         class="inline-flex items-center justify-center p-2 text-gray-700 rounded-lg lg:hidden hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
@@ -128,7 +129,7 @@
             </div>
         </div>
 
-        <!-- Mobile Navigation Menu - Enhanced -->
+        <!-- Mobile Menu -->
         <div x-show="open"
              x-transition:enter="transition ease-out duration-200"
              x-transition:enter-start="opacity-0 -translate-y-1"

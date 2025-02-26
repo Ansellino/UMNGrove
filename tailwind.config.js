@@ -7,6 +7,8 @@ export default {
         "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
         "./storage/framework/views/*.php",
         "./resources/views/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
     ],
     theme: {
         extend: {
@@ -15,6 +17,11 @@ export default {
             },
             screens: {
                 xs: "475px",
+                sm: "640px",
+                md: "768px",
+                lg: "1024px",
+                xl: "1280px",
+                "2xl": "1536px",
                 ...defaultTheme.screens,
             },
             animation: {
@@ -36,6 +43,13 @@ export default {
             },
             zIndex: {
                 50: "50",
+            },
+            fontSize: {
+                xs: "0.75rem",
+                sm: "0.875rem",
+            },
+            spacing: {
+                0.5: "0.125rem",
             },
         },
     },
