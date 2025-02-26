@@ -34,10 +34,10 @@
                     <div class="transition-transform duration-300 transform hover:scale-105">
                         <div class="h-full p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6">
                             <div class="h-48">
-                            <a href="{{ route('login') }}"><img src="{{ asset('HOME/local/tour-packages.jpg') }}" alt="Tour Package"
+                            <a href="{{ route('news.index') }}"><img src="{{ asset('HOME/local/tour-packages.jpg') }}" alt="Tour Package"
                             class="object-cover object-center w-full h-full rounded-lg"></a>
                             </div>
-                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('login') }}" class="transition-colors hover:text-blue-600">Tour Packages</a></h3>
+                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('news.index') }}" class="transition-colors hover:text-blue-600">Tour Packages</a></h3>
                             <p class="mt-2 text-sm text-justify text-gray-600 sm:text-base">
                             Overtime Mangrove Tour Package with the concept of educational tourism, ecology that is sustainable for the socio-economy and environment.
                             </p>
@@ -47,10 +47,10 @@
                     <div class="transition-transform duration-300 transform hover:scale-105">
                         <div class="h-full p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6">
                             <div class="h-48">
-                            <a href="{{ route('login') }}"><img src="{{ asset('HOME/local/mangrove-products.jpg') }}" alt="Mangrove Products"
+                            <a href="{{ route('posts.index') }}"><img src="{{ asset('HOME/local/mangrove-products.jpg') }}" alt="Mangrove Products"
                             class="object-cover object-center w-full h-full rounded-lg"></a>
                             </div>
-                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('login') }}" class="transition-colors hover:text-blue-600">Mangrove Products</a></h3>
+                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('posts.index') }}" class="transition-colors hover:text-blue-600">Mangrove Products</a></h3>
                             <p class="mt-2 text-sm text-justify text-gray-600 sm:text-base">
                             Buying products produced from mangrove plants other than wood can improve the economy of local communities.
                             </p>
@@ -60,10 +60,10 @@
                     <div class="transition-transform duration-300 transform hover:scale-105">
                         <div class="h-full p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6">
                             <div class="h-48">
-                            <a href="{{ route('login') }}"><img src="{{ asset('HOME/local/csr.png') }}" alt="CSR Programs"
+                            <a href="{{ route('csrprogram') }}"><img src="{{ asset('HOME/local/csr.png') }}" alt="CSR Programs"
                             class="object-cover object-center w-full h-full rounded-lg"></a>
                             </div>
-                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('login') }}" class="transition-colors hover:text-blue-600">CSR Programs</a></h3>
+                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('csrprogram') }}" class="transition-colors hover:text-blue-600">CSR Programs</a></h3>
                             <p class="mt-2 text-sm text-justify text-gray-600 sm:text-base">
                             Program CSR perusahaan dalam perlindungan lingkungan di pesisir yang dapat meningkatkan daya beli masyarakat sekitar.
                             </p>
@@ -73,10 +73,10 @@
                     <div class="transition-transform duration-300 transform hover:scale-105">
                         <div class="h-full p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6">
                             <div class="h-48">
-                            <a href="{{ route('login') }}"><img src="{{ asset('HOME/local/research.jpg') }}" alt="Research and Dedication"
+                            <a href="{{ route('researchdedication') }}"><img src="{{ asset('HOME/local/research.jpg') }}" alt="Research and Dedication"
                             class="object-cover object-center w-full h-full rounded-lg"> </a>
                             </div>
-                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('login') }}" class="transition-colors hover:text-blue-600">Research and Dedication</a></h3>
+                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('researchdedication') }}" class="transition-colors hover:text-blue-600">Research and Dedication</a></h3>
                             <p class="mt-2 text-sm text-justify text-gray-600 sm:text-base">
                             Academic research and service are needed in the sustainability of the lives of local people.
                             </p>
