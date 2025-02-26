@@ -4,9 +4,7 @@ import forms from "@tailwindcss/forms";
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
-        "./storage/framework/views/*.php",
-        "./resources/views/**/*.blade.php",
+        "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
     ],
@@ -24,9 +22,11 @@ export default {
                 "2xl": "1536px",
                 ...defaultTheme.screens,
             },
-            animation: {
-                float: "float 3s ease-in-out infinite",
-                "fade-in": "fade-in 0.6s ease-out forwards",
+            keyframes: {
+                float: {
+                    "0%, 100%": { transform: "translateY(0)" },
+                    "50%": { transform: "translateY(-10px)" },
+                },
             },
             boxShadow: {
                 "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
@@ -45,12 +45,11 @@ export default {
                 50: "50",
             },
             fontSize: {
-                xs: "0.75rem",
-                sm: "0.875rem",
-            },
-            spacing: {
                 0.5: "0.125rem",
+                sm: "0.875rem",
+                xs: "0.75rem",
             },
+            spacing: {},
         },
     },
     plugins: [forms, require("@tailwindcss/forms")],

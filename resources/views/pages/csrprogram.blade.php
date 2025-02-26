@@ -2,13 +2,13 @@
     <div class="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div class="relative z-10 flex items-center justify-center min-h-screen px-4 py-12">
             <div class="w-full max-w-7xl">
-                <div class="overflow-hidden transition-all duration-300 transform bg-white shadow-2xl rounded-3xl hover:shadow-3xl">
+                <div class="overflow-hidden transition-all duration-300 transform bg-white shadow-2xl rounded-3xl hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
                     <!-- Hero Section -->
                     <div class="mb-24">
                         <div class="relative overflow-hidden">
-                            <img src="{{ asset('CSR/background.jpg') }}" 
-                                 alt="CSR Initiatives" 
-                                 class="object-cover w-full h-[30vh] sm:h-[40vh] lg:h-[50vh] transition-transform duration-300">
+                            <img src="{{ asset('CSR/background.jpg') }}"
+                                 alt="CSR Initiatives"
+                                 class="object-cover w-full transition-transform duration-300 h-[30vh] sm:h-[40vh] lg:h-[50vh]">
                             <div class="absolute inset-0 bg-black/40"></div>
                             <div class="absolute inset-0 flex flex-col items-center justify-center p-4 space-y-6">
                                 <h1 class="max-w-4xl text-3xl font-bold text-center text-white sm:text-4xl md:text-5xl lg:text-6xl">
@@ -25,7 +25,7 @@
                     <div class="px-4 mt-8 space-y-24 sm:px-6 lg:px-8">
                         <!-- Introduction Section -->
                         <div class="max-w-4xl mx-auto">
-                            <div class="p-6 transition-all duration-300 transform sm:p-8 lg:p-10 bg-green-50 rounded-xl hover:scale-105">
+                            <div class="p-6 transition-all duration-300 transform bg-green-50 sm:p-8 lg:p-10 rounded-xl hover:scale-105">
                                 <h2 class="mb-8 text-3xl font-bold text-center text-green-800 sm:text-4xl lg:text-5xl">
                                     Open to All CSR Initiatives
                                 </h2>
@@ -62,7 +62,7 @@
 
                             <!-- Card 3 - Village Infrastructure -->
                             <div class="flex flex-col items-center p-6 text-center transition-all duration-300 bg-white border-2 border-gray-200 shadow-lg cursor-pointer sm:p-8 rounded-xl hover:shadow-xl hover:scale-105">
-                                <svg class="w-16 h-16 mb-4 text-gray-500 animate-float" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-16 h-16 mb-4 text-gray-500 animate-[bounce_3s_ease-in-out_infinite]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                                 </svg>
                                 <h3 class="mb-3 text-xl font-bold sm:text-2xl">Village Infrastructure</h3>
@@ -70,7 +70,7 @@
                             </div>
 
                             <!-- Card 4 - Mangrove Conservation -->
-                            <div class="flex flex-col items-center p-6 text-center transition-all duration-300 bg-white border-2 border-gray-200 shadow-lg sm:p-8 rounded-xl hover:shadow-xl">
+                            <div class="flex flex-col items-center p-6 text-center transition-all duration-300 bg-white border-2 border-gray-200 shadow-lg sm:p-8 rounded-xl hover:shadow-xl hover:scale-105">
                                 <svg class="w-12 h-12 mb-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
                                 </svg>
@@ -88,7 +88,7 @@
                                 <p class="mb-8 text-base text-gray-700 sm:text-lg">
                                     We welcome discussions about potential CSR partnerships. Contact us to learn more about how we can work together.
                                 </p>
-                                <a href="{{ route('contact') }}" 
+                                <a href="{{ route('contact') }}"
                                    class="inline-flex items-center px-6 py-3 text-base font-medium text-white transition-all duration-200 transform bg-blue-600 rounded-lg sm:text-lg hover:bg-blue-700 hover:scale-105 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                                     Contact Us
                                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -102,31 +102,4 @@
             </div>
         </div>
     </div>
-
-    <style>
-        @layer utilities {
-            .bg-grid-pattern {
-                background-image:
-                    linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px);
-                background-size: 20px 20px;
-            }
-
-            .shadow-3xl {
-                --tw-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
-                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-                           var(--tw-ring-shadow, 0 0 #0000),
-                           var(--tw-shadow);
-            }
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .animate-float {
-            animation: float 3s ease-in-out infinite;
-        }
-    </style>
 </x-app-layout>

@@ -8,7 +8,8 @@
                         <div class="relative overflow-hidden">
                             <img src="{{ asset('CSR/background.jpg') }}"
                                  alt="Research Initiatives"
-                                 class="object-cover w-full h-48 transition-transform duration-300 sm:h-64 md:h-72 lg:h-96">
+                                 class="object-cover w-full h-48 transition-transform duration-300 sm:h-64 md:h-72 lg:h-96 hover:scale-105">
+                            <!-- Removed grid pattern, simplified overlay -->
                             <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40 backdrop-blur-[2px]"></div>
                             <div class="absolute inset-0 flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
                                 <h1 class="max-w-4xl text-2xl font-bold text-center text-white sm:text-3xl md:text-4xl lg:text-5xl">
@@ -24,7 +25,7 @@
                     <!-- Content Section -->
                     <div class="px-4 py-6 space-y-8 sm:px-6 lg:px-8 sm:py-8 lg:py-12">
                         <!-- Main Info Section -->
-                        <div class="overflow-hidden transition-all duration-300 shadow-lg bg-blue-50 rounded-xl hover:shadow-xl">
+                        <div class="overflow-hidden transition-all duration-300 shadow-lg bg-blue-50 rounded-xl hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
                             <div class="p-4 sm:p-6 lg:p-8">
                                 <div class="flex flex-col gap-6 lg:flex-row lg:gap-12">
                                     <!-- Image Column -->
@@ -81,32 +82,4 @@
             </div>
         </div>
     </div>
-
-    <style>
-        @layer utilities {
-            .bg-grid-pattern {
-                background-image:
-                    linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px);
-                background-size: 20px 20px;
-            }
-
-            .shadow-3xl {
-                --tw-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
-                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-                           var(--tw-ring-shadow, 0 0 #0000),
-                           var(--tw-shadow);
-            }
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .animate-float {
-            animation: float 3s ease-in-out infinite;
-        }
-
-    </style>
 </x-app-layout>
