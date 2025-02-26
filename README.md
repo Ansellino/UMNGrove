@@ -1,8 +1,8 @@
-# 🌿 Lembur Mangrove Patikang
+# 🌿 UMNGrove - Lembur Mangrove Patikang Website V.2.0
 
 An innovative web platform for sustainable mangrove tourism and education in Pangandaran, Indonesia.
 
-![Laravel](https://img.shields.io/badge/Laravel-10.x-red)
+![Laravel](https://img.shields.io/badge/Laravel-11.x-red)
 ![PHP](https://img.shields.io/badge/PHP-8.1-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3-38B2AC)
@@ -46,7 +46,7 @@ Lembur Mangrove Patikang connects visitors with mangrove conservation efforts th
 
 -   **Backend:**
     -   PHP 8.1
-    -   Laravel 10.x
+    -   Laravel 11.x
     -   MySQL/MariaDB
     -   Laravel Breeze (Authentication)
 -   **Frontend:**
