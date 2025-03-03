@@ -183,3 +183,18 @@ If you discover any security vulnerabilities, please email [hello@lemburmangrove
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🌟 **Special Thanks**
+
+We extend our gratitude to the following contributors and partners:
+
+-   **Project Leader**: Lovenia Megumi Surjanto
+-   **Public Relations**: Imel Sausan Maryam, Winsten, Christabell Grace Chalin
+-   **Event Coordinators**: Angel Tambarna Teresa, Rafael Putra Hulu
+-   **Visuals**: Maitriana, Luna Ardhagia Widodo
+-   **Social Media**: Cindy Celia Jennifer, Kezia Margaretha Chandra
+-   **Developers**:
+    -   Fullstack: Jeremy Ansellino Gunawan
+    -   Frontend: Aldo Juan Edrick Jolin, Ivan Reynardo
+    -   Backend: Edward
+-   **Videography**: Evelyn Valencia
