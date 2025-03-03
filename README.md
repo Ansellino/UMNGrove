@@ -45,7 +45,7 @@ Lembur Mangrove Patikang connects visitors with mangrove conservation efforts th
 ## 🛠 Tech Stack
 
 -   **Backend:**
-    -   PHP 8.1
+    -   PHP 8.2
     -   Laravel 11.x
     -   MySQL/MariaDB
     -   Laravel Breeze (Authentication)
