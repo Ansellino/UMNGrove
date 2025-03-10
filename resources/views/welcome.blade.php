@@ -24,8 +24,8 @@
         <section class="py-8 bg-white sm:py-12 lg:py-16">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-2xl font-bold leading-tight text-gray-900 sm:text-3xl lg:text-4xl">Let's Help The Locals Grow</h2>
-                <p class="mt-3 text-base text-gray-600 sm:text-lg md:mt-4">
+                <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">Let's Help The Locals Grow</h2>
+                <p class="mt-4 text-lg text-gray-600 sm:text-xl md:text-2xl">
                 "Waktu terbaik menanam pohon adalah 20 tahun yang lalu dan waktu terbaik kedua adalah sekarang."
                 </p>
                 </div>
