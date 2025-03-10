@@ -21,163 +21,6 @@
             </div>
         </div>
 
-        <section class="py-8 bg-white sm:py-12 lg:py-16">
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">Let's Help The Locals Grow</h2>
-                <p class="mt-4 text-lg text-gray-600 sm:text-xl md:text-2xl">
-                "Waktu terbaik menanam pohon adalah 20 tahun yang lalu dan waktu terbaik kedua adalah sekarang."
-                </p>
-                </div>
-
-                <div class="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-4 sm:gap-8 lg:mt-12">
-                    <div class="transition-transform duration-300 transform hover:scale-105">
-                        <div class="h-full p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6">
-                            <div class="h-48">
-                            <a href="{{ route('news.index') }}"><img src="{{ asset('HOME/local/tour-packages.jpg') }}" alt="Tour Package"
-                            class="object-cover object-center w-full h-full rounded-lg"></a>
-                            </div>
-                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('news.index') }}" class="transition-colors hover:text-blue-600">Tour Packages</a></h3>
-                            <p class="mt-2 text-sm text-justify text-gray-600 sm:text-base">
-                            Overtime Mangrove Tour Package with the concept of educational tourism, ecology that is sustainable for the socio-economy and environment.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="transition-transform duration-300 transform hover:scale-105">
-                        <div class="h-full p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6">
-                            <div class="h-48">
-                            <a href="{{ route('posts.index') }}"><img src="{{ asset('HOME/local/mangrove-products.jpg') }}" alt="Mangrove Products"
-                            class="object-cover object-center w-full h-full rounded-lg"></a>
-                            </div>
-                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('posts.index') }}" class="transition-colors hover:text-blue-600">Mangrove Products</a></h3>
-                            <p class="mt-2 text-sm text-justify text-gray-600 sm:text-base">
-                            Buying products produced from mangrove plants other than wood can improve the economy of local communities.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="transition-transform duration-300 transform hover:scale-105">
-                        <div class="h-full p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6">
-                            <div class="h-48">
-                            <a href="{{ route('csrprogram') }}"><img src="{{ asset('HOME/local/csr.png') }}" alt="CSR Programs"
-                            class="object-cover object-center w-full h-full rounded-lg"></a>
-                            </div>
-                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('csrprogram') }}" class="transition-colors hover:text-blue-600">CSR Programs</a></h3>
-                            <p class="mt-2 text-sm text-justify text-gray-600 sm:text-base">
-                            Program CSR perusahaan dalam perlindungan lingkungan di pesisir yang dapat meningkatkan daya beli masyarakat sekitar.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="transition-transform duration-300 transform hover:scale-105">
-                        <div class="h-full p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6">
-                            <div class="h-48">
-                            <a href="{{ route('researchdedication') }}"><img src="{{ asset('HOME/local/research.jpg') }}" alt="Research and Dedication"
-                            class="object-cover object-center w-full h-full rounded-lg"> </a>
-                            </div>
-                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('researchdedication') }}" class="transition-colors hover:text-blue-600">Research and Dedication</a></h3>
-                            <p class="mt-2 text-sm text-justify text-gray-600 sm:text-base">
-                            Academic research and service are needed in the sustainability of the lives of local people.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-16 bg-gradient-to-b from-white to-gray-50">
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    Registration & Payment Procedure
-                </h2>
-            </div>
-
-            <div class="grid max-w-5xl grid-cols-1 gap-8 mx-auto mt-12 sm:mt-16 lg:grid-cols-4">
-                <!-- Step 1 -->
-                <div class="relative p-6 transition-all duration-300 bg-white border border-gray-100 shadow-sm rounded-2xl hover:shadow-xl hover:-translate-y-1 group">
-                    <div class="absolute left-0 right-0 flex justify-center mb-8 -top-4">
-                        <div class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
-                            1
-                        </div>
-                    </div>
-                    <div class="pt-8">
-                        <h3 class="mt-4 text-xl font-semibold text-center text-gray-900">
-                            Select Package
-                        </h3>
-                        <p class="mt-4 text-base leading-relaxed text-center text-gray-600">
-                            Browse and choose your preferred tour package or product from our curated offerings
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="relative p-6 transition-all duration-300 bg-white border border-gray-100 shadow-sm rounded-2xl hover:shadow-xl hover:-translate-y-1 group">
-                    <div class="absolute left-0 right-0 flex justify-center mb-8 -top-4">
-                        <div class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
-                            2
-                        </div>
-                    </div>
-                    <div class="pt-8">
-                        <h3 class="mt-4 text-xl font-semibold text-center text-gray-900">
-                            Contact Us
-                        </h3>
-                        <p class="mt-4 text-base leading-relaxed text-center text-gray-600">
-                            Reach out via WhatsApp:
-                            <a href="https://wa.me/0817849463" class="block mt-2 font-medium text-blue-600 transition-colors hover:text-blue-700">
-                                0817849463 (Deden)
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="relative p-6 transition-all duration-300 bg-white border border-gray-100 shadow-sm rounded-2xl hover:shadow-xl hover:-translate-y-1 group">
-                    <div class="absolute left-0 right-0 flex justify-center mb-8 -top-4">
-                        <div class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
-                            3
-                        </div>
-                    </div>
-                    <div class="pt-8">
-                        <h3 class="mt-4 text-xl font-semibold text-center text-gray-900">
-                            Submit Details
-                        </h3>
-                        <p class="mt-4 text-base leading-relaxed text-center text-gray-600">
-                            Provide your full name and the package/product you're interested in purchasing
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="relative p-6 transition-all duration-300 bg-white border border-gray-100 shadow-sm rounded-2xl hover:shadow-xl hover:-translate-y-1 group">
-                    <div class="absolute left-0 right-0 flex justify-center mb-8 -top-4">
-                        <div class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
-                            4
-                        </div>
-                    </div>
-                    <div class="pt-8">
-                        <h3 class="mt-4 text-xl font-semibold text-center text-gray-900">
-                            Complete Payment
-                        </h3>
-                        <p class="mt-4 text-base leading-relaxed text-center text-gray-600">
-                            Scan the provided QRIS code to complete your payment securely and instantly
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-12 text-center">
-                <a href="{{ route('login') }}" class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                Get Started
-                <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-                </a>
-            </div>
-            </div>
-        </section>
-
         <section class="py-12 sm:py-16">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div class="max-w-3xl mx-auto text-center">
@@ -210,6 +53,163 @@
             </div>
             </div>
           </section>
+
+        <section class="py-8 bg-white sm:py-12 lg:py-16">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
+                <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">Let's Help The Locals Grow</h2>
+                <p class="mt-4 text-lg text-black sm:text-xl md:text-2xl">
+                "Waktu terbaik menanam pohon adalah 20 tahun yang lalu dan waktu terbaik kedua adalah sekarang."
+                </p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-4 sm:gap-8 lg:mt-12">
+                    <div class="transition-transform duration-300 transform hover:scale-105">
+                        <div class="h-full p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6">
+                            <div class="h-48">
+                            <a href="{{ route('news.index') }}"><img src="{{ asset('HOME/local/tour-packages.jpg') }}" alt="Tour Package"
+                            class="object-cover object-center w-full h-full rounded-lg"></a>
+                            </div>
+                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('news.index') }}" class="transition-colors hover:text-blue-600">Tour Packages</a></h3>
+                            <p class="mt-2 text-sm text-justify text-gray-800 sm:text-base">
+                            Overtime Mangrove Tour Package with the concept of educational tourism, ecology that is sustainable for the socio-economy and environment.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="transition-transform duration-300 transform hover:scale-105">
+                        <div class="h-full p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6">
+                            <div class="h-48">
+                            <a href="{{ route('posts.index') }}"><img src="{{ asset('HOME/local/mangrove-products.jpg') }}" alt="Mangrove Products"
+                            class="object-cover object-center w-full h-full rounded-lg"></a>
+                            </div>
+                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('posts.index') }}" class="transition-colors hover:text-blue-600">Mangrove Products</a></h3>
+                            <p class="mt-2 text-sm text-justify text-gray-800 sm:text-base">
+                            Buying products produced from mangrove plants other than wood can improve the economy of local communities.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="transition-transform duration-300 transform hover:scale-105">
+                        <div class="h-full p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6">
+                            <div class="h-48">
+                            <a href="{{ route('csrprogram') }}"><img src="{{ asset('HOME/local/csr.png') }}" alt="CSR Programs"
+                            class="object-cover object-center w-full h-full rounded-lg"></a>
+                            </div>
+                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('csrprogram') }}" class="transition-colors hover:text-blue-600">CSR Programs</a></h3>
+                            <p class="mt-2 text-sm text-justify text-gray-800 sm:text-base">
+                            Program CSR perusahaan dalam perlindungan lingkungan di pesisir yang dapat meningkatkan daya beli masyarakat sekitar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="transition-transform duration-300 transform hover:scale-105">
+                        <div class="h-full p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6">
+                            <div class="h-48">
+                            <a href="{{ route('researchdedication') }}"><img src="{{ asset('HOME/local/research.jpg') }}" alt="Research and Dedication"
+                            class="object-cover object-center w-full h-full rounded-lg"> </a>
+                            </div>
+                            <h3 class="mt-4 text-lg font-bold text-center text-gray-900 sm:text-xl"><a href="{{ route('researchdedication') }}" class="transition-colors hover:text-blue-600">Research and Dedication</a></h3>
+                            <p class="mt-2 text-sm text-justify text-gray-800 sm:text-base">
+                            Academic research and service are needed in the sustainability of the lives of local people.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                Registration & Payment Procedure
+            </h2>
+            </div>
+
+            <div class="grid max-w-6xl grid-cols-1 gap-10 mx-auto mt-16 sm:mt-20 lg:grid-cols-4">
+            <!-- Step 1 -->
+            <div class="relative p-8 transition-all duration-300 bg-white border border-gray-100 shadow-lg rounded-2xl hover:shadow-xl hover:-translate-y-2 group">
+                <div class="absolute left-0 right-0 flex justify-center mb-8 -top-6">
+                <div class="flex items-center justify-center w-12 h-12 text-xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
+                    1
+                </div>
+                </div>
+                <div class="pt-8">
+                <h3 class="mt-4 text-2xl font-semibold text-center text-gray-900">
+                    Select Package
+                </h3>
+                <p class="mt-4 text-lg leading-relaxed text-center text-gray-600">
+                    Browse and choose your preferred tour package or product from our curated offerings
+                </p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative p-8 transition-all duration-300 bg-white border border-gray-100 shadow-lg rounded-2xl hover:shadow-xl hover:-translate-y-2 group">
+                <div class="absolute left-0 right-0 flex justify-center mb-8 -top-6">
+                <div class="flex items-center justify-center w-12 h-12 text-xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
+                    2
+                </div>
+                </div>
+                <div class="pt-8">
+                <h3 class="mt-4 text-2xl font-semibold text-center text-gray-900">
+                    Contact Us
+                </h3>
+                <p class="mt-4 text-lg leading-relaxed text-center text-gray-600">
+                    Reach out via WhatsApp:
+                    <a href="https://wa.me/0817849463" class="block mt-2 font-medium text-blue-600 transition-colors hover:text-blue-700">
+                    0817849463 (Deden)
+                    </a>
+                </p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative p-8 transition-all duration-300 bg-white border border-gray-100 shadow-lg rounded-2xl hover:shadow-xl hover:-translate-y-2 group">
+                <div class="absolute left-0 right-0 flex justify-center mb-8 -top-6">
+                <div class="flex items-center justify-center w-12 h-12 text-xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
+                    3
+                </div>
+                </div>
+                <div class="pt-8">
+                <h3 class="mt-4 text-2xl font-semibold text-center text-gray-900">
+                    Submit Details
+                </h3>
+                <p class="mt-4 text-lg leading-relaxed text-center text-gray-600">
+                    Provide your full name and the package/product you're interested in purchasing
+                </p>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="relative p-8 transition-all duration-300 bg-white border border-gray-100 shadow-lg rounded-2xl hover:shadow-xl hover:-translate-y-2 group">
+                <div class="absolute left-0 right-0 flex justify-center mb-8 -top-6">
+                <div class="flex items-center justify-center w-12 h-12 text-xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
+                    4
+                </div>
+                </div>
+                <div class="pt-8">
+                <h3 class="mt-4 text-2xl font-semibold text-center text-gray-900">
+                    Complete Payment
+                </h3>
+                <p class="mt-4 text-lg leading-relaxed text-center text-gray-600">
+                    Scan the provided QRIS code to complete your payment securely and instantly
+                </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="mt-16 text-center">
+            <a href="{{ route('login') }}" class="inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            Get Started
+            <svg class="w-6 h-6 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+            </a>
+            </div>
+            </div>
+        </section>
 
         <!-- Replace the product slideshow section -->
         <section class="py-10 bg-white">

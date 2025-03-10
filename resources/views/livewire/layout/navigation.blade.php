@@ -38,7 +38,7 @@
                                 :href="route($item['route'])"
                                 :active="request()->routeIs($item['route'])"
                                 wire:navigate
-                                class="relative px-2 py-2 mx-2 text-sm font-medium transition-all duration-200 whitespace-nowrap lg:text-xs xl:text-sm hover:text-blue-600 xl:mx-4">
+                                class="relative px-2 py-2 mx-2 text-base font-medium text-black transition-all duration-200 whitespace-nowrap lg:text-sm xl:text-base hover:text-blue-600 xl:mx-4">
                                 <span>{{ __($item['label']) }}</span>
                                 @if(request()->routeIs($item['route']))
                                     <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 rounded-full"></span>
