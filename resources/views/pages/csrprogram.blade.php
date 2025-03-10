@@ -80,7 +80,7 @@
                         </div>
 
                         <!-- Contact Section -->
-                        <div class="max-w-4xl px-4 mx-auto mt-8 mb-8 sm:px-6 lg:px-8">
+                        <div class="max-w-4xl px-4 pb-8 mx-auto mt-8 mb-8 sm:px-6 lg:px-8">
                             <div class="p-8 text-center border-2 border-blue-200 sm:p-10 lg:p-12 bg-blue-50 rounded-xl">
                                 <h3 class="mb-6 text-2xl font-bold text-blue-900 sm:text-3xl lg:text-4xl">
                                     Interested in Collaboration?

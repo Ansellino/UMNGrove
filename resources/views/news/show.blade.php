@@ -29,7 +29,7 @@
                 <div class="relative p-6 overflow-hidden border-b-2 border-gray-100 sm:p-8 lg:p-10">
                     <!-- Background Image with Blur -->
                     <div class="absolute inset-0 z-0">
-                        <img src="{{ asset('images1/banner.png') }}"
+                        <img src="{{ asset('images1/banner.webp') }}"
                              alt="Background"
                              class="object-cover w-full h-full"
                              style="filter: blur(8px); opacity: 0.15;">

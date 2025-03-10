@@ -4,7 +4,7 @@
             <div class="w-full max-w-7xl">
                 <div class="overflow-hidden transition-all duration-300 transform bg-white shadow-2xl rounded-3xl hover:shadow-3xl">
                     <div class="relative px-6 py-10 overflow-hidden bg-center bg-no-repeat bg-cover sm:px-12 sm:py-16"
-                         style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(17, 24, 39, 0.8)), url('{{ asset('images1/banner.png') }}');">
+                         style="background-image: url('{{ asset('images1/banner.webp') }}');">
                         <div class="relative">
                             <h1 class="relative max-w-3xl mx-auto text-3xl font-bold text-center text-white sm:text-4xl lg:text-5xl">
                                 CONTACT US

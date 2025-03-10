@@ -17,7 +17,7 @@
     <body class="font-sans antialiased text-gray-900">
         <!-- Full screen background with overlay -->
         <div class="fixed inset-0 z-0">
-            <img src="{{ asset('images1/banner.png') }}" alt="Background" class="object-cover w-full h-full">
+            <img src="{{ asset('images1/banner.webp') }}" alt="Background" class="object-cover w-full h-full">
             <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         </div>
 

@@ -3,18 +3,18 @@
     <div class="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50">
 
         <!-- Responsive Hero Section -->
-        <div class="relative overflow-hidden bg-center bg-no-repeat bg-cover" style="background-image: url('{{ asset('images1/banner.png') }}')">
+        <div class="relative overflow-hidden bg-center bg-no-repeat bg-cover p" style="background-image: url('{{ asset('images1/banner.webp') }}')">
             <div class="absolute inset-0 bg-black/40"></div>
 
-            <div class="relative px-4 py-24 sm:px-6 sm:py-32 lg:py-40 lg:px-8">
+            <div class="relative px-4 py-24 sm:px-6 sm:py-60 lg:scroll-py-72 lg:px-8">
                 <div class="max-w-3xl mx-auto text-center">
-                    <h1 class="text-5xl font-bold text-white sm:text-5xl md:text-6xl">
+                    <h1 class="text-5xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl">
                         Welcome To Patikang
                     </h1>
-                    <p class="mt-4 text-lg text-white sm:text-xl">
+                    <p class="mt-4 text-lg text-white sm:text-xl md:text-2xl lg:text-3xl">
                         Lembur Mangrove, Citeureup Tourism Village
                     </p>
-                    <a href="{{ route('login') }}" class="inline-block px-6 py-3 mt-8 text-lg font-medium text-white transition-all duration-300 bg-orange-500 border-2 border-white rounded-md shadow-lg hover:bg-orange-600 hover:border-orange-300 hover:text-orange-100 hover:scale-105 shadow-orange-500/50">
+                    <a href="{{ route('login') }}" class="inline-block px-8 py-4 mt-8 text-xl font-medium text-white transition-all duration-300 bg-orange-500 border-2 border-white rounded-md shadow-lg hover:bg-orange-600 hover:border-orange-300 hover:text-orange-100 hover:scale-105 shadow-orange-500/50">
                         Look Out!
                     </a>
                 </div>
@@ -250,7 +250,7 @@
             </div>
         </section>
 
-        <section class="py-12 bg-center bg-no-repeat bg-cover sm:py-16" style="background-image: url('{{ asset('images1/banner.png') }}')">
+        <section class="py-12 bg-center bg-no-repeat bg-cover sm:py-16" style="background-image: url('{{ asset('images1/banner.webp') }}')">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div class="max-w-3xl mx-auto mb-5 text-center">
                 <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl">Contact Us</h2>
@@ -360,7 +360,7 @@
             const images = slideshow.querySelectorAll('img');
             images.forEach((img, index) => {
                 const imagePosition = positions[index];
-                img.src = `{{ asset('images1/') }}/${imagePosition + 1}.png`;
+                img.src = `{{ asset('images1/') }}/${imagePosition + 1}.webp`;
                 img.alt = `Product ${imagePosition + 1}`;
 
                 // Add fade transition
