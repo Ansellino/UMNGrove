@@ -5,35 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>403 Forbidden</title>
     @vite('resources/css/app.css')
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="flex items-center justify-center min-h-screen p-4 bg-gradient-to-tr from-slate-900 via-purple-900 to-slate-900">
-    <div class="w-full max-w-lg p-12 border shadow-2xl bg-white/10 backdrop-blur-lg rounded-2xl border-white/20">
-        <div class="relative flex flex-col items-center">
-            <!-- Decorative elements -->
-            <div class="absolute left-0 w-24 h-24 rounded-full -top-12 bg-purple-500/20 blur-xl"></div>
-            <div class="absolute right-0 w-32 h-32 rounded-full -bottom-12 bg-blue-500/20 blur-xl"></div>
+<body class="relative flex items-center justify-center min-h-screen px-4 py-8 font-inter">
+    <div class="absolute inset-0 z-0">
+        <img src="{{ asset( 'images1/banner.webp') }}" alt="Background" class="object-cover w-full h-full blur-sm">
+        <div class="absolute inset-0 bg-black/50"></div>
+    </div>
 
-            <!-- Error Icon -->
-            <div class="relative p-6 mb-8 border rounded-full bg-red-500/10 border-red-500/20 backdrop-blur-sm">
-                <svg class="w-20 h-20 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+    <main class="relative z-10 w-full max-w-lg p-8 border shadow-lg bg-white/10 backdrop-blur-md rounded-3xl border-white/20">
+        <div class="flex flex-col items-center">
+            <figure class="mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-red-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
                 </svg>
-            </div>
+                <figcaption class="sr-only">403 Error Icon</figcaption>
+            </figure>
 
-            <!-- Error Content -->
-            <h1 class="mb-4 font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">403</h1>
-            <h2 class="mb-2 text-3xl font-bold text-white/90">Access Forbidden</h2>
-            <p class="max-w-sm mb-8 text-lg text-center text-white/60">Sorry, but you don't have permission to access this page.</p>
+            <h1 class="mb-2 text-6xl font-bold text-white font-lora">403</h1>
+            <h2 class="mb-1 text-2xl font-semibold text-white/90">Access Forbidden</h2>
+            <p class="mb-6 text-center text-white/70">Sorry, but you don't have permission to access this page.</p>
 
-            <!-- Action Buttons -->
             <div class="flex flex-col w-full max-w-xs gap-4 sm:flex-row">
-                <a href="/" class="flex items-center justify-center w-full px-6 py-3 font-semibold text-white transition-all duration-300 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl hover:from-purple-600 hover:to-pink-600 hover:scale-105 focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-purple-900">
+                <a href="/" class="flex items-center justify-center w-full px-6 py-3 font-semibold text-white transition-colors duration-200 rounded-full bg-gray-700/50 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                     </svg>
                     Return Home
                 </a>
-                <button onclick="history.back()" class="flex items-center justify-center w-full px-6 py-3 font-semibold transition-all duration-300 border border-white/20 rounded-xl hover:bg-white/10 hover:scale-105 text-white/80 backdrop-blur-sm focus:ring-2 focus:ring-white/20">
+                <button onclick="history.back()" class="flex items-center justify-center w-full px-6 py-3 font-semibold text-white transition-colors duration-200 border rounded-full border-white/20 hover:bg-white/10 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-opacity-50">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
                     </svg>
@@ -41,6 +43,6 @@
                 </button>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>
