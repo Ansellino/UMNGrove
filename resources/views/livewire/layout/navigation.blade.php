@@ -1,4 +1,3 @@
-<!-- Wrap everything in a single root div -->
 <div>
     <?php
     use App\Livewire\Actions\Logout;
@@ -202,35 +201,4 @@
             @endauth
         </div>
     </nav>
-
-    <!-- Add these styles to your CSS -->
-    <style>
-        @media (min-width: 1024px) and (max-width: 1279px) {
-            .lg\:space-x-4 > * + * {
-                margin-left: 1rem;
-            }
-
-            .lg\:px-2 {
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-            }
-
-            .nav-text-adjust {
-                font-size: 0.875rem;
-            }
-        }
-
-        /* Prevent text wrapping in navigation items */
-        .whitespace-nowrap {
-            white-space: nowrap;
-        }
-
-        /* Adjust container padding for better spacing */
-        @media (min-width: 1024px) {
-            .container-adjust {
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-        }
-    </style>
 </div>
