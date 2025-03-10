@@ -12,7 +12,7 @@
     }; ?>
 
     <nav x-data="{ open: false }"
-         class="sticky top-0 z-50 transition-all duration-300 border-b border-gray-200 shadow-md bg-white/95 backdrop-blur-lg"
+         class="sticky top-0 z-50 transition-all duration-300 border-b border-gray-200 shadow-md backdrop-blur-lg bg-[#FCFCE4]"
          :class="{ 'shadow-lg': open }">
         <!-- Container with responsive padding -->
         <div class="px-2 mx-auto max-w-7xl sm:px-4 lg:px-4 xl:px-8">
