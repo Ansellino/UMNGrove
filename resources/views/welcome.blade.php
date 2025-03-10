@@ -119,100 +119,169 @@
             </div>
         </section>
 
-        <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+        <!-- Registration & Payment Procedure Section -->
+        <section class="py-16 bg-gradient-to-b from-white to-gray-50 sm:py-20">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                Registration & Payment Procedure
-            </h2>
-            </div>
+                <!-- Section Header with enhanced styling -->
+                <div class="max-w-3xl mx-auto text-center">
+                    <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 rounded-full">Easy Process</span>
+                    <h2 class="mt-3 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
+                        Registration &amp; Payment Procedure
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Complete your booking in just a few simple steps
+                    </p>
+                </div>
 
-            <div class="grid max-w-6xl grid-cols-1 gap-10 mx-auto mt-16 sm:mt-20 lg:grid-cols-4">
-            <!-- Step 1 -->
-            <div class="relative p-8 transition-all duration-300 bg-white border border-gray-100 shadow-lg rounded-2xl hover:shadow-xl hover:-translate-y-2 group">
-                <div class="absolute left-0 right-0 flex justify-center mb-8 -top-6">
-                <div class="flex items-center justify-center w-12 h-12 text-xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
-                    1
-                </div>
-                </div>
-                <div class="pt-8">
-                <h3 class="mt-4 text-2xl font-semibold text-center text-gray-900">
-                    Select Package
-                </h3>
-                <p class="mt-4 text-lg leading-relaxed text-center text-gray-600">
-                    Browse and choose your preferred tour package or product from our curated offerings
-                </p>
-                </div>
-            </div>
+                <!-- Responsive Grid - Adjusts from 1 column on mobile to 4 on desktop -->
+                <div class="grid max-w-6xl grid-cols-1 gap-8 mx-auto mt-12 sm:mt-16 md:grid-cols-2 lg:grid-cols-4 sm:gap-y-12">
+                    <!-- Step 1 -->
+                    <div class="relative p-6 transition-all duration-300 bg-white border border-gray-100 shadow-lg sm:p-8 rounded-2xl hover:shadow-xl hover:-translate-y-2 group">
+                        <!-- Numbered circle indicator -->
+                        <div class="absolute left-0 right-0 flex justify-center -top-6">
+                            <div class="flex items-center justify-center w-12 h-12 text-xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
+                                1
+                            </div>
+                        </div>
 
-            <!-- Step 2 -->
-            <div class="relative p-8 transition-all duration-300 bg-white border border-gray-100 shadow-lg rounded-2xl hover:shadow-xl hover:-translate-y-2 group">
-                <div class="absolute left-0 right-0 flex justify-center mb-8 -top-6">
-                <div class="flex items-center justify-center w-12 h-12 text-xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
-                    2
+                        <!-- Step Icon -->
+                        <div class="flex justify-center pt-6">
+                            <svg class="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                            </svg>
+                        </div>
+
+                        <div class="pt-4">
+                            <h3 class="mt-2 text-xl font-semibold text-center text-gray-900 sm:text-2xl">
+                                Select Package
+                            </h3>
+                            <p class="mt-3 text-base leading-relaxed text-center text-gray-600 sm:text-lg">
+                                Browse and choose your preferred tour package or product from our curated offerings
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative p-6 transition-all duration-300 bg-white border border-gray-100 shadow-lg sm:p-8 rounded-2xl hover:shadow-xl hover:-translate-y-2 group">
+                        <div class="absolute left-0 right-0 flex justify-center -top-6">
+                            <div class="flex items-center justify-center w-12 h-12 text-xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
+                                2
+                            </div>
+                        </div>
+
+                        <!-- Step Icon -->
+                        <div class="flex justify-center pt-6">
+                            <svg class="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                        </div>
+
+                        <div class="pt-4">
+                            <h3 class="mt-2 text-xl font-semibold text-center text-gray-900 sm:text-2xl">
+                                Contact Us
+                            </h3>
+                            <p class="mt-3 text-base leading-relaxed text-center text-gray-600 sm:text-lg">
+                                Reach out via WhatsApp:
+                                <a href="https://wa.me/6281784946301" class="block mt-2 font-medium text-blue-600 transition-colors hover:text-blue-700">
+                                    0817849463 (Deden)
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative p-6 transition-all duration-300 bg-white border border-gray-100 shadow-lg sm:p-8 rounded-2xl hover:shadow-xl hover:-translate-y-2 group">
+                        <div class="absolute left-0 right-0 flex justify-center -top-6">
+                            <div class="flex items-center justify-center w-12 h-12 text-xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
+                                3
+                            </div>
+                        </div>
+
+                        <!-- Step Icon -->
+                        <div class="flex justify-center pt-6">
+                            <svg class="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                            </svg>
+                        </div>
+
+                        <div class="pt-4">
+                            <h3 class="mt-2 text-xl font-semibold text-center text-gray-900 sm:text-2xl">
+                                Submit Details
+                            </h3>
+                            <p class="mt-3 text-base leading-relaxed text-center text-gray-600 sm:text-lg">
+                                Provide your full name and the package/product you're interested in purchasing
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative p-6 transition-all duration-300 bg-white border border-gray-100 shadow-lg sm:p-8 rounded-2xl hover:shadow-xl hover:-translate-y-2 group">
+                        <div class="absolute left-0 right-0 flex justify-center -top-6">
+                            <div class="flex items-center justify-center w-12 h-12 text-xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
+                                4
+                            </div>
+                        </div>
+
+                        <!-- Step Icon -->
+                        <div class="flex justify-center pt-6">
+                            <svg class="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+
+                        <div class="pt-4">
+                            <h3 class="mt-2 text-xl font-semibold text-center text-gray-900 sm:text-2xl">
+                                Complete Payment
+                            </h3>
+                            <p class="mt-3 text-base leading-relaxed text-center text-gray-600 sm:text-lg">
+                                Scan the provided QRIS code to complete your payment securely and instantly
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Progress Connector - Only visible on larger screens -->
+                <div class="hidden max-w-6xl mx-auto -mt-24 lg:block">
+                    <div class="flex items-center justify-between px-16">
+                        <div class="w-full h-1 bg-blue-200"></div>
+                    </div>
                 </div>
-                <div class="pt-8">
-                <h3 class="mt-4 text-2xl font-semibold text-center text-gray-900">
-                    Contact Us
-                </h3>
-                <p class="mt-4 text-lg leading-relaxed text-center text-gray-600">
-                    Reach out via WhatsApp:
-                    <a href="https://wa.me/0817849463" class="block mt-2 font-medium text-blue-600 transition-colors hover:text-blue-700">
-                    0817849463 (Deden)
+
+                <!-- Visual Progress - For mobile/tablet -->
+                <div class="flex justify-center mt-10 lg:hidden">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-3 h-3 bg-blue-600 rounded-full"></div>
+                        <div class="w-12 h-1 bg-blue-300"></div>
+                        <div class="w-3 h-3 bg-blue-600 rounded-full"></div>
+                        <div class="w-12 h-1 bg-blue-300"></div>
+                        <div class="w-3 h-3 bg-blue-600 rounded-full"></div>
+                        <div class="w-12 h-1 bg-blue-300"></div>
+                        <div class="w-3 h-3 bg-blue-600 rounded-full"></div>
+                    </div>
+                </div>
+
+                <!-- Call to Action Button -->
+                <div class="mt-32 text-center">
+                    <a href="{{ route('login') }}" class="inline-flex items-center px-6 py-4 text-lg font-medium text-white transition-all duration-300 bg-blue-600 border border-transparent rounded-md shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 hover:scale-105 sm:px-8">
+                        Get Started
+                        <svg class="w-5 h-5 ml-2 -mr-1 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
                     </a>
-                </p>
+                    <!-- Secondary action for users who need more info -->
+                    <div class="mt-4">
+                        <a href="/Contact" class="inline-flex items-center text-sm font-medium text-blue-600 transition-colors hover:text-blue-800">
+                            Have questions? Contact us
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="relative p-8 transition-all duration-300 bg-white border border-gray-100 shadow-lg rounded-2xl hover:shadow-xl hover:-translate-y-2 group">
-                <div class="absolute left-0 right-0 flex justify-center mb-8 -top-6">
-                <div class="flex items-center justify-center w-12 h-12 text-xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
-                    3
-                </div>
-                </div>
-                <div class="pt-8">
-                <h3 class="mt-4 text-2xl font-semibold text-center text-gray-900">
-                    Submit Details
-                </h3>
-                <p class="mt-4 text-lg leading-relaxed text-center text-gray-600">
-                    Provide your full name and the package/product you're interested in purchasing
-                </p>
-                </div>
-            </div>
-
-            <!-- Step 4 -->
-            <div class="relative p-8 transition-all duration-300 bg-white border border-gray-100 shadow-lg rounded-2xl hover:shadow-xl hover:-translate-y-2 group">
-                <div class="absolute left-0 right-0 flex justify-center mb-8 -top-6">
-                <div class="flex items-center justify-center w-12 h-12 text-xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full shadow-lg group-hover:scale-110 group-hover:bg-blue-700">
-                    4
-                </div>
-                </div>
-                <div class="pt-8">
-                <h3 class="mt-4 text-2xl font-semibold text-center text-gray-900">
-                    Complete Payment
-                </h3>
-                <p class="mt-4 text-lg leading-relaxed text-center text-gray-600">
-                    Scan the provided QRIS code to complete your payment securely and instantly
-                </p>
-                </div>
-            </div>
-            </div>
-
-            <div class="mt-16 text-center">
-            <a href="{{ route('login') }}" class="inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-            Get Started
-            <svg class="w-6 h-6 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-            </a>
-            </div>
             </div>
         </section>
 
-        <!-- Replace the product slideshow section -->
-        <section class="py-10 bg-white">
+       <section class="py-10 bg-white">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="mt-6 mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Featured Products</h2>
@@ -220,32 +289,42 @@
                 </div>
 
                 <div class="relative mt-12">
-                    <div class="max-w-5xl mx-auto overflow-hidden rounded-2xl">
-                        <div class="grid grid-cols-4 gap-4" id="product-slideshow">
+                    <div class="max-w-5xl mx-auto overflow-hidden rounded-2xl"
+                        x-data="productSlideshow"
+                        data-image-base-path="{{ asset('images1') }}">
+                        <div class="grid grid-cols-4 gap-4"
+                            x-ref="slideshow"
+                            id="product-slideshow"
+                            @mouseenter="stopAutoRotation"
+                            @mouseleave="startAutoRotation">
                             @for ($i = 1; $i <= 4; $i++)
                                 <div class="overflow-hidden transition-all duration-500 bg-gray-100 rounded-xl group">
                                     <div class="relative aspect-w-1 aspect-h-1">
-                                        <img src="{{ asset('images1/' . $i . '.png') }}"
-                                             alt="Product {{ $i }}"
-                                             class="object-cover w-full h-48 transition-transform duration-300 sm:h-56 group-hover:scale-110"
-                                             data-position="{{ $i - 1 }}">
+                                        <img src="{{ asset('images1/' . $i . '.webp') }}"
+                                            alt="Product {{ $i }}"
+                                            class="object-cover w-full h-48 transition-transform duration-300 sm:h-56 group-hover:scale-110"
+                                            data-position="{{ $i - 1 }}">
                                     </div>
                                 </div>
                             @endfor
                         </div>
-                    </div>
 
-                    <!-- Navigation Buttons (adjusted position for smaller container) -->
-                    <button class="absolute flex items-center justify-center w-10 h-10 transition-all duration-200 -translate-y-1/2 rounded-full shadow-lg left-2 top-1/2 bg-white/90 hover:bg-white focus:outline-none" id="prev-slide">
-                        <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                        </svg>
-                    </button>
-                    <button class="absolute flex items-center justify-center w-10 h-10 transition-all duration-200 -translate-y-1/2 rounded-full shadow-lg right-2 top-1/2 bg-white/90 hover:bg-white focus:outline-none" id="next-slide">
-                        <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                        </svg>
-                    </button>
+                        <!-- Navigation Buttons (adjusted position for smaller container) -->
+                        <button @click="rotateLeft"
+                                class="absolute flex items-center justify-center w-10 h-10 transition-all duration-200 -translate-y-1/2 rounded-full shadow-lg left-2 top-1/2 bg-white/90 hover:bg-white focus:outline-none"
+                                id="prev-slide">
+                            <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                            </svg>
+                        </button>
+                        <button @click="rotateRight"
+                                class="absolute flex items-center justify-center w-10 h-10 transition-all duration-200 -translate-y-1/2 rounded-full shadow-lg right-2 top-1/2 bg-white/90 hover:bg-white focus:outline-none"
+                                id="next-slide">
+                            <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -346,91 +425,4 @@
             </div>
           </section>
     </div>
-
-    <!-- Replace the JavaScript section -->
-    <script>
-        const slideshow = document.getElementById('product-slideshow');
-        const prevButton = document.getElementById('prev-slide');
-        const nextButton = document.getElementById('next-slide');
-        const totalImages = 8;
-        const visibleImages = 4;
-        let positions = [0, 1, 2, 3]; // Current image positions (0-based index)
-
-        function updateImages() {
-            const images = slideshow.querySelectorAll('img');
-            images.forEach((img, index) => {
-                const imagePosition = positions[index];
-                img.src = `{{ asset('images1/') }}/${imagePosition + 1}.webp`;
-                img.alt = `Product ${imagePosition + 1}`;
-
-                // Add fade transition
-                img.style.opacity = '0';
-                setTimeout(() => {
-                    img.style.opacity = '1';
-                }, 25);
-            });
-        }
-
-        function rotateRight() {
-            positions = positions.map(pos => (pos + 1) % totalImages);
-            updateImages();
-        }
-
-        function rotateLeft() {
-            positions = positions.map(pos => (pos - 1 + totalImages) % totalImages);
-            updateImages();
-        }
-
-        nextButton.addEventListener('click', () => {
-            rotateRight();
-        });
-
-        prevButton.addEventListener('click', () => {
-            rotateLeft();
-        });
-
-        // Auto-advance one image at a time
-        let slideInterval = setInterval(rotateRight, 3000);
-
-        // Pause on hover
-        slideshow.addEventListener('mouseenter', () => {
-            clearInterval(slideInterval);
-        });
-
-        // Resume on mouse leave
-        slideshow.addEventListener('mouseleave', () => {
-            slideInterval = setInterval(rotateRight, 3000);
-        });
-
-        // Add fade transition styles
-        const style = document.createElement('style');
-        style.textContent = `
-            #product-slideshow img {
-                transition: opacity 0.3s ease-in-out;
-            }
-        `;
-        document.head.appendChild(style);
-
-        // Mobile Menu JavaScript
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (event) => {
-            if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
-                mobileMenu.classList.add('hidden');
-            }
-        });
-
-        // Handle window resize
-        window.addEventListener('resize', () => {
-            if (window.innerWidth >= 1024) { // md breakpoint
-                mobileMenu.classList.add('hidden');
-            }
-        });
-    </script>
 </x-app-layout>
