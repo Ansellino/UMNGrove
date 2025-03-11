@@ -27,11 +27,11 @@
                         <div class="relative flex items-center justify-center p-6 bg-gray-50">
                             @if ($post->image)
                                 <div class="relative max-w-md mx-auto group">
-                                    <div class="overflow-hidden bg-white rounded-xl h-[200px]">
+                                    <div class="overflow-hidden bg-white rounded-xl">
                                         <img
                                             src="{{ asset('storage/'. $post->image) }}"
                                             alt="{{ $post->title }}"
-                                            class="object-contain w-full h-[200px] transition-all duration-500 transform group-hover:scale-105"
+                                            class="object-contain w-full h-full transition-all duration-500 transform group-hover:scale-105"
                                         >
                                     </div>
                                 </div>
@@ -53,18 +53,28 @@
 
                                 {{-- Price Section --}}
                                 @if ($post->price)
-                                    <div class="mb-6">
-                                        <div class="flex items-baseline space-x-2">
-                                            <span class="text-3xl font-bold text-gray-900">
-                                                Rp {{ number_format($post->price, 0, ',', '.') }}
-                                            </span>
-                                        </div>
+                                <div class="mb-6">
+                                    <div class="flex items-baseline space-x-2">
+                                        <span class="text-3xl font-bold text-gray-900">
+                                            Rp {{ number_format($post->price, 0, ',', '.') }}
+                                        </span>
+                                        <!-- Optional: Add discounted price comparison if needed -->
+                                        <span class="text-lg text-gray-500 line-through">
+                                            Rp {{ number_format(($post->price + ($post->price*(20/100))), 0, ',', '.') }}
+                                        </span>
+                                         <span class="px-2 py-1 text-xs font-bold text-white bg-red-500 rounded-md">
+                                            SAVE 20%
+                                        </span>
                                     </div>
+                                </div>
                                 @endif
 
-                                {{-- Description with Black Text --}}
-                                <div class="mb-8 prose prose-lg text-justify max-w-none prose-headings:text-gray-900 prose-p:text-gray-700">
-                                    {!! $post->content !!}
+                                {{-- Full Description --}}
+                                <div class="pt-4 pb-8">
+                                    <h3 class="mb-3 text-lg font-medium text-gray-900">Description</h3>
+                                    <div class="prose prose-lg text-gray-900 max-w-none prose-headings:text-gray-900 prose-headings:font-semibold prose-p:text-gray-700 prose-a:text-blue-600 prose-strong:text-gray-900 prose-img:rounded-xl prose-img:shadow-md prose-li:text-gray-700">
+                                        {!! $post->content !!}
+                                    </div>
                                 </div>
 
                                 {{-- Author and Date Info --}}
