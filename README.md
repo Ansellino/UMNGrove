@@ -424,11 +424,15 @@ We extend our gratitude to the following contributors and partners:
 -   **Visuals**: Maitriana, Luna Ardhagia Widodo
 -   **Videography**: Evelyn Valencia
 
-### Development Team
+### Development Team Website V1
 
 -   **Fullstack**: Jeremy Ansellino Gunawan
 -   **Frontend**: Aldo Juan Edrick Jolin, Ivan Reynardo
 -   **Backend**: Edward
+
+### Development Team Website V2
+
+-   **Fullstack**: Jeremy Ansellino Gunawan
 
 ---
 
