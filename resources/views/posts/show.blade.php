@@ -59,12 +59,12 @@
                                             Rp {{ number_format($post->price, 0, ',', '.') }}
                                         </span>
                                         <!-- Optional: Add discounted price comparison if needed -->
-                                        <span class="text-lg text-gray-500 line-through">
+                                        {{-- <span class="text-lg text-gray-500 line-through">
                                             Rp {{ number_format(($post->price + ($post->price*(20/100))), 0, ',', '.') }}
                                         </span>
                                          <span class="px-2 py-1 text-xs font-bold text-white bg-red-500 rounded-md">
                                             SAVE 20%
-                                        </span>
+                                        </span>--}}
                                     </div>
                                 </div>
                                 @endif
