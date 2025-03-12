@@ -426,11 +426,15 @@ We extend our gratitude to the following contributors and partners:
 
 ### Development Team Website V1
 
+Link Repository : https://github.com/Ansellino/LemburPatikang
+
 -   **Fullstack**: Jeremy Ansellino Gunawan
 -   **Frontend**: Aldo Juan Edrick Jolin, Ivan Reynardo
 -   **Backend**: Edward
 
 ### Development Team Website V2
+
+Link Repository : https://github.com/Ansellino/UMNGrove
 
 -   **Fullstack**: Jeremy Ansellino Gunawan
 
