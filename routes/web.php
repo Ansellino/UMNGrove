@@ -10,6 +10,10 @@ use App\Livewire\Pages\Aboutus;
 use App\Livewire\Pages\Contact;
 use App\Livewire\Pages\CsrProgram;
 use App\Livewire\Pages\Home;
+use App\Livewire\Pages\NewsDetail;
+use App\Livewire\Pages\NewsList;
+use App\Livewire\Pages\ProductDetail;
+use App\Livewire\Pages\ProductList;
 use App\Livewire\Pages\ResearchDedication;
 use Illuminate\Support\Facades\Route;
 
@@ -31,19 +35,26 @@ Route::middleware(['auth'])->group(function () {
     })->name('dashboard');
 
     // Posts routes
-    Route::resource('posts', PostController::class);
+    Route::resource('posts', ProductList::class);
 });
 
 Route::middleware(['auth'])->group(function () {
-    Route::post('/posts/{post}/favorite', [PostController::class, 'toggleFavorite'])
+    Route::post('/posts/{post}/favorite', [ProductList::class, 'toggleFavorite'])
         ->name('posts.favorite');
 });
 
-Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
-Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
+Route::get('/posts', ProductList::class)->name('posts.index');
+Route::get('/posts/{post}', ProductDetail::class)->name('posts.show');
 
-Route::get('/news', [NewsController::class, 'index'])->name('news.index');
-Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.show');
+
+//Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+//Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
+
+Route::get('/news', NewsList::class)->name('news.index');
+Route::get('/news/{slug}', NewsDetail::class)->name('news.show');
+
+//Route::get('/news', [NewsController::class, 'index'])->name('news.index');
+//Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.show');
 
 Route::get('/aboutus', Aboutus::class)->name('aboutus');
 Route::get('/contact', Contact::class)->name('contact');
