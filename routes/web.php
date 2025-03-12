@@ -6,6 +6,10 @@ use App\Http\Controllers\CsrController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ResearchDedicationController;
+use App\Livewire\Pages\Aboutus;
+use App\Livewire\Pages\Contact;
+use App\Livewire\Pages\CsrProgram;
+use App\Livewire\Pages\ResearchDedication;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('home');
@@ -39,9 +43,14 @@ Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show')
 Route::get('/news', [NewsController::class, 'index'])->name('news.index');
 Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.show');
 
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-Route::get('/aboutus', [AboutController::class, 'index'])->name('aboutus');
-Route::get('/csrprogram', [CsrController::class, 'index'])->name('csrprogram');
-Route::get('/researchdedication', [ResearchDedicationController::class, 'index'])->name('researchdedication');
+Route::get('/aboutus', Aboutus::class)->name('aboutus');
+Route::get('/contact', Contact::class)->name('contact');
+Route::get('/csr-program', CsrProgram::class)->name('csrprogram');
+Route::get('/researchdedication', ResearchDedication::class)->name('researchdedication');
+
+//Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+//Route::get('/aboutus', [AboutController::class, 'index'])->name('aboutus');
+//Route::get('/csrprogram', [CsrController::class, 'index'])->name('csrprogram');
+//Route::get('/researchdedication', [ResearchDedicationController::class, 'index'])->name('researchdedication');
 
 require __DIR__.'/auth.php';

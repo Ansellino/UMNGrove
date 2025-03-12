@@ -1,4 +1,5 @@
-<x-app-layout>
+
+<div>
     <div class="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div class="relative z-10 flex items-center justify-center min-h-screen px-4 py-12">
             <div class="w-full max-w-7xl">
@@ -21,7 +22,7 @@
 
                             <div class="relative w-full overflow-hidden bg-gray-200 shadow-lg rounded-xl h-96">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.864696014467!2d105.5117217748805!3d-6.162489993872215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e418b3293027b5b%3A0x6a0c0e7041f92e21!2sKp%20Patikang%2C%20Citereup%2C%20Panimbang%2C%20Pandeglang%2C%20Banten!5e0!3m2!1sid!2sid!4v1707267152010!5m2!1sid!2sid"
+                                    src="{{ $mapEmbedUrl }}"
                                     width="100%"
                                     height="100%"
                                     style="border:0;"
@@ -45,9 +46,9 @@
                                         <div>
                                             <h3 class="text-xl font-semibold text-gray-800">Our Location</h3>
                                             <p class="mt-2 text-gray-600">
-                                                Kp Patikang, Citereup Village,<br>
-                                                Panimbang, Pandeglang Banten<br>
-                                                Indonesia
+                                                {{ $address['line1'] }}<br>
+                                                {{ $address['line2'] }}<br>
+                                                {{ $address['line3'] }}
                                             </p>
                                         </div>
                                     </div>
@@ -65,12 +66,12 @@
                                             <h3 class="text-xl font-semibold text-gray-800">Contact Details</h3>
                                             <div class="mt-2 space-y-2">
                                                 <p class="flex items-center text-gray-600">
-                                                    <span class="font-medium">Deden:</span>
-                                                    <span class="ml-2">+62 817-849-463</span>
+                                                    <span class="font-medium">{{ $contactName }}:</span>
+                                                    <span class="ml-2">{{ $phone }}</span>
                                                 </p>
                                                 <p class="flex items-center text-gray-600">
                                                     <span class="font-medium">Hours:</span>
-                                                    <span class="ml-2">Mon-Fri, 8:00-22:00</span>
+                                                    <span class="ml-2">{{ $hours }}</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -80,7 +81,9 @@
 
                             <!-- Chat Button -->
                             <div class="flex justify-center mt-6">
-                                <a href="#" class="inline-flex items-center px-6 py-3 space-x-2 text-base font-medium text-black transition-all duration-200 bg-green-600 border-4 border-green-500 rounded-lg shadow-lg hover:bg-green-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 hover:border-green-600">
+                                <a href="{{ $whatsAppLink }}"
+                                   target="_blank"
+                                   class="inline-flex items-center px-6 py-3 space-x-2 text-base font-medium text-white transition-all duration-200 bg-green-600 border-4 border-green-500 rounded-lg shadow-lg hover:bg-green-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 hover:border-green-600">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                                     </svg>
@@ -89,38 +92,8 @@
                             </div>
                         </div>
                     </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <style>
-        @layer utilities {
-          .bg-grid-pattern {
-                background-image:
-                    linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px);
-                background-size: 20px 20px;
-            }
-
-          .shadow-3xl {
-                --tw-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
-                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-                            var(--tw-ring-shadow, 0 0 #0000),
-                            var(--tw-shadow);
-            }
-        }
-
-        /* Custom Animations */
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-      .animate-float {
-            animation: float 3s ease-in-out infinite;
-        }
-    </style>
-</x-app-layout>
+</div>

@@ -31,12 +31,20 @@ export default {
             boxShadow: {
                 "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
             },
-            transitionProperty: {
-                height: "height",
-                spacing: "margin, padding",
+            animation: {
+                float: "float 3s ease-in-out infinite",
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+                "grid-pattern":
+                    "linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px)",
+            },
+            backgroundSize: {
+                grid: "20px 20px",
+            },
+            transitionProperty: {
+                height: "height",
+                spacing: "margin, padding",
             },
             backdropBlur: {
                 xs: "2px",

@@ -1,4 +1,4 @@
-<x-app-layout>
+<div>
     <div class="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div class="relative z-10 flex items-center justify-center min-h-screen px-4 py-8 sm:py-12 lg:py-16">
             <div class="w-full max-w-7xl">
@@ -9,7 +9,6 @@
                             <img src="{{ asset('CSR/background.jpg') }}"
                                  alt="Research Initiatives"
                                  class="object-cover w-full h-48 transition-transform duration-300 sm:h-64 md:h-72 lg:h-96 hover:scale-105">
-                            <!-- Removed grid pattern, simplified overlay -->
                             <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40 backdrop-blur-[2px]"></div>
                             <div class="absolute inset-0 flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
                                 <h1 class="max-w-4xl text-2xl font-bold text-center text-white sm:text-3xl md:text-4xl lg:text-5xl">
@@ -25,7 +24,7 @@
                     <!-- Content Section -->
                     <div class="px-4 py-6 space-y-8 sm:px-6 lg:px-8 sm:py-8 lg:py-12">
                         <!-- Main Info Section -->
-                        <div class="overflow-hidden transition-all duration-300 shadow-lg bg-blue-50 rounded-xl hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+                        <div class="overflow-hidden transition-all duration-300 shadow-lg bg-blue-50 rounded-xl hover:shadow-3xl">
                             <div class="p-4 sm:p-6 lg:p-8">
                                 <div class="flex flex-col gap-6 lg:flex-row lg:gap-12">
                                     <!-- Image Column -->
@@ -59,7 +58,7 @@
 
                                 <!-- Contact Section -->
                                 <div class="flex flex-col items-stretch gap-3 mt-6 sm:flex-row sm:items-center sm:justify-center sm:gap-4 sm:mt-8 lg:mt-12">
-                                    <a href="https://wa.me/62817849463"
+                                    <a href="{{ $whatsappLink }}"
                                        target="_blank"
                                        class="inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium text-white transition-all duration-300 bg-green-500 rounded-lg shadow-md sm:text-base lg:text-lg hover:bg-green-600 hover:shadow-lg active:transform active:scale-95">
                                         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -67,7 +66,7 @@
                                         </svg>
                                         Chat on WhatsApp
                                     </a>
-                                    <a href="mailto:hello@lemburmangrove.com"
+                                    <a href="mailto:{{ $email }}"
                                        class="inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium text-blue-600 transition-all duration-300 bg-white rounded-lg shadow-md sm:text-base lg:text-lg hover:bg-blue-50 hover:shadow-lg active:transform active:scale-95">
                                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -82,4 +81,4 @@
             </div>
         </div>
     </div>
-</x-app-layout>
+</div>
