@@ -42,6 +42,8 @@
     </div>
 
     <!-- Livewire Scripts -->
+
+    @stack('scripts')
     @livewireScripts
 </body>
 </html>

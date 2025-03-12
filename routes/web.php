@@ -9,10 +9,12 @@ use App\Http\Controllers\ResearchDedicationController;
 use App\Livewire\Pages\Aboutus;
 use App\Livewire\Pages\Contact;
 use App\Livewire\Pages\CsrProgram;
+use App\Livewire\Pages\Home;
 use App\Livewire\Pages\ResearchDedication;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'welcome')->name('home');
+Route::get('/', Home::class)->name('home');
+//Route::view('/', 'welcome')->name('home');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
